@@ -116,6 +116,98 @@ ul.itens-menu li a {
 
 /* Fim CSS Banner */
 /*inicio da section autorizada*/
+section.sevicos-autorizada {
+    width: 100%;
+    display: flex;
+    padding-top: 8.3rem;
+    padding-bottom: 8.3rem;
+}
+
+.imagem-servicos {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+}
+
+.imagem-servicos :first-of-type {
+    width: 28.4rem;
+    height: 2.4rem;
+    align-self: center;
+    margin-bottom: 2.5rem;
+}
+
+.textos-autorizada {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3.6rem;
+}
+
+.titles-autorizadas {
+    width: 40.9rem;
+}
+
+.textos-autorizada h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: #3C72EC;
+    text-align: center;
+}
+
+.textos-autorizada h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-left: 1rem;
+    margin-bottom: 4.7rem;
+}
+
+.produtos-servicos {
+    display: flex;
+    gap: 2.9rem;
+    margin-bottom: 2.2rem;
+}
+
+.produtos-servicos li {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.textos-autorizada p {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.textos-autorizada span {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.listas-de-servicos {
+    display: flex;
+    gap: 10rem;
+    list-style-type: square;
+    padding-left: 2rem;
+}
+
+.listas-de-servicos li {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.listas-de-servicos li::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    background-color: #3498db;
+    border-radius: 2px;
+}
+
+
 /*fim da section autorizada*/
 /*inicio section empresas*/
 section.container-empresas {
