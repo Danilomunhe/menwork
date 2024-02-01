@@ -209,6 +209,97 @@ section.sevicos-autorizada {
 
 
 /*fim da section autorizada*/
+
+/*incio da seciton gamer windows*/
+.servicos-windows {
+    display: flex;
+    width: 100%;
+    padding-bottom: 3.7rem;
+}
+
+.conteudo-servico-windows {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 14.5rem;
+}
+
+.titles-conteudo-gamer {
+    align-self: center;
+    padding-left: 20.2rem;
+}
+
+.titles-conteudo-gamer h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-align: center;
+    color: #3C72EC;
+
+}
+
+.titles-conteudo-gamer h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 6.7rem;
+}
+
+.imagem-servicos-gamer {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-servicos-gamer img:first-child {
+    align-self: center;
+    width: 15rem;
+    height: 5rem;
+    margin-bottom: 2.8rem;
+    margin-top: 2rem;
+}
+
+.produtos-gamers {
+    display: flex;
+    gap: 2.6rem;
+}
+
+.produtos-gamers li {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.conteudo-servico-windows p {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1.9rem;
+    margin-bottom: 10rem;
+}
+
+.listas-servicos-gamer {
+    display: flex;
+    gap: 6rem;
+}
+
+.listas-servicos-gamer ul li {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.listas-servicos-gamer li::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    background-color: #3498db;
+    border-radius: 2px;
+}
+
+/*fim da section windows*/
+
 /*inicio section empresas*/
 section.container-empresas {
     background-color: #3C72EC;
