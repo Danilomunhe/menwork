@@ -1,0 +1,558 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: #fff;
+    height: 7rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav {
+    width: 1440px;
+    justify-content: center;
+    align-items: center;
+}
+
+header .menu {
+    display: flex;
+    width: 1440px;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul.itens-menu {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 500;
+    gap: 3.5rem;
+    line-height: 1.8rem;
+
+}
+
+ul.itens-menu li a {
+    color: #000;
+}
+
+.button-contato {
+    background-color: #3C72EC;
+    width: 18rem;
+    height: 4rem;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.button-contato a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-weight: 500;
+}
+
+.button-contato a:hover {
+    color: #FFF;
+}
+
+/*Fim header*/
+/* Início CSS Banner */
+
+
+.banner {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner h3 {
+    font-size: 1.8em;
+    margin: 5px 0px 5px 0px;
+
+}
+
+.banner p {
+    font-size: 1.6em;
+    padding-right: 150px;
+}
+
+.button-qs {
+    margin-top: 5px;
+}
+
+/* Fim CSS Banner */
+/*inicio da section autorizada*/
+/*fim da section autorizada*/
+/*inicio section empresas*/
+section.container-empresas {
+    background-color: #3C72EC;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-empresas h3 {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: #FFF;
+    margin-top: 1.9rem;
+}
+
+.container-empresas h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 4.9rem;
+    color: #fff;
+}
+
+.container-empresas p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    color: #fff;
+    text-align: center;
+}
+
+.container-imagens-empresas {
+    background: linear-gradient(to top, #fff 50%, #3C72EC 50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    padding: 1.8rem 0;
+}
+
+.container-imagem {
+    width: 23rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-imagem h4 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3rem;
+    width: 23rem;
+}
+
+/*fim da seciton empresas*/
+
+/*inicio da seciton contato*/
+
+.container-contato {
+    display: flex;
+    padding-top: 6.5rem;
+    padding-bottom: 9.3rem;
+}
+
+.conteudo-contato {
+    width: 1440px;
+    display: flex;
+}
+
+.left-contato {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.left-contato h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 3.9rem;
+    text-align: left;
+    margin-bottom: 0.7rem;
+}
+
+.left-contato p {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 2.2rem;
+    text-align: left;
+    margin-bottom: 1.7rem;
+}
+
+.container-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 2.3rem;
+}
+
+.container-form form input {
+    width: 54rem;
+    height: 2.6rem;
+    border: 1px solid #3C72EC;
+    outline: none;
+    padding: 0.5rem 0.9rem;
+    border-radius: 0.3rem;
+}
+
+.container-form form input::placeholder,
+textarea::placeholder {
+    font-size: 1.4rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+    color: #C3C3C3;
+}
+
+textarea {
+    width: 54rem;
+    resize: none !important;
+    padding: 0.5rem;
+    border: 1px solid #3C72EC;
+    outline: none;
+    border-radius: 0.3rem;
+    padding: 0.5rem 1.1rem;
+}
+
+.right-contato {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
+
+/*fim da seciton contato*/
+
+/*Inicio Section equipe*/
+section.membros-equipe {
+    background-color: #333033;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membros-equipe h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 4.8rem;
+    margin-bottom: 0.9rem;
+}
+
+.membros-equipe p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 1.6rem;
+}
+
+.container-imagens-membros {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 7.4rem;
+}
+
+.carousel-membros .carousel.slide .carousel-inner {
+    width: 1100px !important;
+}
+
+.carousel-membros .carousel.slide .carousel-control-prev {
+    left: -20rem !important;
+}
+
+.carousel-membros .carousel.slide .carousel-control-next {
+    right: -20rem !important;
+}
+
+/*Fim section equipe*/
+
+/*inicio da seciton atendimento*/
+.container-atendimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to top, #fff 90%, #333033 10%);
+    width: 100%;
+}
+
+.info-contato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 100%;
+    position: relative;
+}
+
+.conteudo-info-contato {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+
+}
+
+.conteudo-info-contato h2 {
+    font-size: 5.5rem;
+    font-weight: 800;
+    line-height: 6.7rem;
+    text-align: center;
+    color: #fff;
+    margin-top: 3.3rem;
+    margin-bottom: 3.3rem;
+
+}
+
+.conteudo-info-contato p {
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.7rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 1rem;
+
+}
+
+.conteudo-info-contato span {
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.2rem;
+    text-align: center;
+    color: #fff;
+    padding-left: 2rem;
+    margin-bottom: 3.3rem;
+}
+
+.button-atendimento {
+    border: 0.3rem solid #FFFFFF;
+    width: 21rem;
+    height: 6rem;
+}
+
+.button-atendimento a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 2.7rem;
+    text-transform: uppercase;
+}
+
+.button-atendimento a:hover {
+    color: #FFF;
+}
+
+.carousel-mensagens-atendimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.carousel-mensagens-atendimento h3 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #3C72EC;
+    margin-top: 4.9rem;
+}
+
+.carousel-mensagens-atendimento h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 4.9rem;
+}
+
+.carousel-atendimento {
+    width: 90rem;
+}
+
+.caixa-mensagem {
+    width: 100%;
+}
+
+.caixa-mensagem p {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.7rem;
+    text-align: center;
+
+}
+
+.user-message {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.icon-user-message {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+}
+
+.icon-user-message img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.user-message span {
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.container-clientes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2.titles-clientes {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0;
+    color: #3C72EC;
+    margin-top: 5.5rem;
+}
+
+h3.description-clientes {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin-top: 0;
+    color: #000;
+}
+
+.carousel-clientes .carousel.slide .carousel-inner {
+    width: 1100px !important;
+}
+
+.carousel-clientes .carousel.slide .carousel-control-prev {
+    left: -20rem !important;
+}
+
+.carousel-clientes .carousel.slide .carousel-control-next {
+    right: -20rem !important;
+}
+
+.carousel-clientes .carousel.slide .carousel-control-prev-icon {
+    background-image: url("/assets/img/seta-esquerda.png") !important;
+}
+
+.carousel-clientes .carousel.slide .carousel-control-next-icon {
+    background-image: url("/assets/img/seta-direita.png") !important;
+}
+
+/*fim da seciton contato*/
+/*Começo footer*/
+footer {
+    width: 100%;
+    background-color: #333033;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 20rem;
+}
+
+.container-footer {
+    width: 1440px;
+    display: flex;
+    align-items: center;
+    gap: 200px;
+}
+
+.container-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    min-height: 80px;
+}
+
+.container-logo h3 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #fff
+}
+
+.itens-footer {
+    min-height: 8rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.itens-footer h3 {
+    font-weight: 800;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
+    color: #fff;
+    margin-bottom: 0.6rem;
+}
+
+.itens-footer ul li a {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    color: #fff
+}
+
+.itens-footer a {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.7rem;
+    color: #fff;
+    margin-bottom: 0.6rem;
+}
+
+.itens-footer a i {
+    font-size: 2rem;
+}
+
+.itens-footer a:hover {
+    color: #FFF;
+}
+
+.container-compartilhe {
+    display: flex;
+    gap: 9px;
+    font-size: 2rem;
+}
+
+/*Fim footer*/
