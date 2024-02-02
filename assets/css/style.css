@@ -1516,17 +1516,22 @@ ul.blue-text {
     }
 
     .carousel-produto-servico .carousel.slide .carousel-control-prev {
-        left: 36rem !important;
+        left: -3rem !important;
     }
 
     .carousel-produto-servico .carousel.slide .carousel-control-next {
-        right: 36rem !important;
+        right: -3rem !important;
+        top: -1rem !important;
     }
 
     .left {
         padding-left: 5%;
         width: 100%;
         align-items: unset;
+    }
+
+    .carousel-produto-servico .carousel.slide .carousel-inner {
+        width: 35rem !important;
     }
 
     .banner.fundo-pc-gamer h1 {
