@@ -817,6 +817,7 @@ ul.itens-menu li a.color-white {
 .container-produto img {
     width: 55.3rem;
     height: 36.9rem;
+    object-fit: cover;
 }
 
 .carousel-produto-servico {
@@ -1470,9 +1471,71 @@ ul.blue-text {
         gap: 1.2rem;
     }
 
+    .page-title h3 {
+        font-size: 3.4rem;
+    }
+
+    .container-banner {
+        width: 100%;
+        padding-left: 5%;
+        justify-content: unset;
+    }
+
+    .banner-fluid {
+        padding: 0;
+    }
+
+    .container-banner video {
+        display: none;
+    }
+
     .container-produto img {
         width: 13.9rem;
         height: 14.8rem;
+        object-fit: cover;
+    }
+
+    .col-first.mobile-empresas .maintence img,
+    .col-first.mobile-empresas .product-sell img,
+    .col-second.mobile-empresas .computer-sell img,
+    .col-second.mobile-empresas .piece-sell img {
+        width: 5.2rem;
+        height: 5.2rem;
+    }
+
+    .services {
+        padding: 0;
+    }
+
+    .services .carousel-produto-servico.esconder-desk {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .piece-sell h3,
+    .computer-sell h3,
+    .product-sell h3,
+    .maintence h3 {
+        font-size: 1.4rem;
+        font-weight: 700;
+        width: 100%;
+        padding-left: 0.5rem;
+    }
+
+    .piece-sell p,
+    .computer-sell p,
+    .product-sell p,
+    .maintence p {
+        padding-left: 0.5rem;
+    }
+
+    .piece-sell,
+    .computer-sell,
+    .product-sell,
+    .maintence {
+        min-height: 8.6rem;
+        padding: 1.2rem 1.2rem;
     }
 
     .textos-produto h3 {
