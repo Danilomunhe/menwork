@@ -741,6 +741,12 @@ footer {
 /*Fim footer*/
 
 /*pc-gamer*/
+.link-menu-ativo {
+    color: #3C72EC !important;
+    padding: 10px;
+    border-bottom: 1px solid #3C72EC;
+}
+
 .fundo-pc-gamer {
     background-color: #342E33;
     width: 100%;
@@ -778,6 +784,126 @@ ul.itens-menu li a.color-white {
 
 }
 
+.container-produto-servico {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.7rem;
+}
+
+.textos-produto h3 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    margin-top: 2.5rem;
+}
+
+.textos-produto p {
+    font-size: 2.5rem;
+    font-weight: 400;
+    width: 55.4rem;
+
+}
+
+.container-produto img {
+    width: 55.3rem;
+    height: 36.9rem;
+}
+
+.carousel-produto-servico {
+    margin-top: 7.2rem;
+    margin-bottom: 7.2rem;
+}
+
+.carousel-produto-servico .carousel.slide .carousel-inner {
+    width: 1300px !important;
+    display: flex;
+}
+
+.carousel-produto-servico .carousel.slide .carousel-control-prev {
+    left: -15rem !important;
+}
+
+.carousel-produto-servico .carousel.slide .carousel-control-next {
+    right: -15rem !important;
+}
+
+.carousel-produto-servico .carousel.slide .carousel-control-prev-icon {
+    background-image: url("/assets/img/seta-esquerda.png") !important;
+}
+
+.carousel-produto-servico .carousel.slide .carousel-control-next-icon {
+    background-image: url("/assets/img/seta-direita.png") !important;
+}
+
+.container-servicos-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container-servico-card {
+    display: flex;
+    gap: 2.3rem;
+    margin-bottom: 4rem;
+}
+
+.carousel-indicators {
+    bottom: -4rem !important;
+}
+
+.bolinha {
+    width: 1rem !important;
+    height: 1rem !important;
+    background-color: #000 !important;
+    border-radius: 50%;
+}
+
+.icone-servico-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #313131;
+    border: 3px solid #CECECE;
+    width: 14rem;
+    height: 14rem;
+}
+
+.textos-card-servico h3 {
+    margin-top: 1.1rem;
+    margin-bottom: 0.3rem;
+    font-size: 3rem;
+    font-weight: 800;
+
+}
+
+.textos-card-servico p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 31rem;
+}
+
+.right-column-servicos {
+    padding-left: 3.4rem;
+}
+
+.border-black {
+    border: 1px solid #000 !important;
+}
+
+.azul-servico {
+
+    background: linear-gradient(to right, #a3bdf9, #e7eeff);
+
+    border: 3px solid #A3BDF9
+}
+
+
 /* Início modo azul */
 
 .bg-blue {
@@ -801,7 +927,8 @@ ul.blue-text {
     background-color: #ffffff;
 }
 
-.button-menu-blue a {
+.button-menu-blue a,
+.button-menu-blue a:hover {
     color: #3C72EC;
 }
 
@@ -822,13 +949,6 @@ ul.blue-text {
 /* Início CSS Banner */
 
 
-.banner {
-    width: 1440px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .banner-fluid {
     width: 100%;
     display: flex;
@@ -844,20 +964,6 @@ ul.blue-text {
     justify-content: center;
 }
 
-.banner h3 {
-    font-size: 1.8em;
-    margin: 5px 0px 5px 0px;
-
-}
-
-.banner p {
-    font-size: 1.6em;
-    padding-right: 150px;
-}
-
-.button-qs {
-    margin-top: 5px;
-}
 
 /* Fim CSS Banner */
 
@@ -868,7 +974,7 @@ ul.blue-text {
     width: 100%;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #577eea 0, #517eea 90%, #fff 10%);
+    background: linear-gradient(to bottom, #577eea 0, #517eea 85%, #fff 15%);
     padding-top: 12em;
 }
 
@@ -885,6 +991,7 @@ ul.blue-text {
     flex-direction: column;
     gap: 3em;
     margin-right: 1.5em;
+    min-height: 39rem;
 }
 
 .col-second {
@@ -892,6 +999,7 @@ ul.blue-text {
     flex-direction: column;
     gap: 3em;
     margin-left: 1.5em;
+    min-height: 39rem;
 }
 
 .maintence,
@@ -905,7 +1013,8 @@ ul.blue-text {
     padding: 1em 2em 1em 2em;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgba(81, 126, 234, 0.2)
+    border: 2px solid rgba(81, 126, 234, 0.2);
+    min-height: 20rem;
 }
 
 .piece-sell h3,
