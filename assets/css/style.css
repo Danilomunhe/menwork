@@ -661,11 +661,11 @@ h3.description-clientes {
 }
 
 .carousel-clientes .carousel.slide .carousel-control-prev-icon {
-    background-image: url("./assets/img/seta-esquerda.png") !important;
+    background-image: url("/assets/img/seta-esquerda.png") !important;
 }
 
 .carousel-clientes .carousel.slide .carousel-control-next-icon {
-    background-image: url("./assets/img/seta-direita.png") !important;
+    background-image: url("/assets/img/seta-direita.png") !important;
 }
 
 /*fim da seciton contato*/
@@ -838,11 +838,11 @@ ul.itens-menu li a.color-white {
 }
 
 .carousel-produto-servico .carousel.slide .carousel-control-prev-icon {
-    background-image: url("./assets/img/seta-esquerda.png") !important;
+    background-image: url("/assets/img/seta-esquerda.png") !important;
 }
 
 .carousel-produto-servico .carousel.slide .carousel-control-next-icon {
-    background-image: url("./assets/img/seta-direita.png") !important;
+    background-image: url("/assets/img/seta-direita.png") !important;
 }
 
 .container-servicos-cards {
@@ -1040,6 +1040,11 @@ ul.blue-text {
 
 /* Fim Service */
 .esconder-desk {
+    display: none;
+}
+
+.texto-produto-mobile,
+.texto-mobile-servico {
     display: none;
 }
 
@@ -1298,11 +1303,11 @@ ul.blue-text {
     }
 
     .carousel-empresas .carousel.slide .carousel-control-prev-icon {
-        background-image: url("./assets/img/seta-esquerda.png") !important;
+        background-image: url("/assets/img/seta-esquerda.png") !important;
     }
 
     .carousel-empresas .carousel.slide .carousel-control-next-icon {
-        background-image: url("./assets/img/seta-direita.png") !important;
+        background-image: url("/assets/img/seta-direita.png") !important;
     }
 
     .container-form form {
@@ -1459,6 +1464,78 @@ ul.blue-text {
 
     .carousel-clientes .carousel.slide .carousel-control-prev {
         display: none;
+    }
+
+    .container-produto {
+        gap: 1.2rem;
+    }
+
+    .container-produto img {
+        width: 13.9rem;
+        height: 14.8rem;
+    }
+
+    .textos-produto h3 {
+        font-size: 1.6rem;
+    }
+
+    .textos-produto p.texto-produto-mobile {
+        font-size: 1.2rem;
+        width: 17.4rem;
+        display: block;
+    }
+
+    .container-servico-card {
+        gap: 0.6rem;
+        margin-bottom: 2.26rem;
+    }
+
+    .right-column-servicos {
+        padding-left: 1.1rem;
+    }
+
+    .icone-servico-card {
+        width: 5.3rem;
+        height: 5.3rem;
+    }
+
+    .icone-servico-card img {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .textos-card-servico h3 {
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    .textos-card-servico p.texto-mobile-servico {
+        font-size: 1.2rem;
+        width: 10rem;
+        display: block;
+    }
+
+    .carousel-produto-servico .carousel.slide .carousel-control-prev {
+        left: 36rem !important;
+    }
+
+    .carousel-produto-servico .carousel.slide .carousel-control-next {
+        right: 36rem !important;
+    }
+
+    .left {
+        padding-left: 5%;
+        width: 100%;
+        align-items: unset;
+    }
+
+    .banner.fundo-pc-gamer h1 {
+        font-size: 3.4rem;
+    }
+
+    .banner fundo-pc-gamer .left .texto-mobile {
+        font-size: 1.2rem;
+        margin-bottom: 2.2rem;
     }
 
     footer {
