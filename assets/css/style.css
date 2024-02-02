@@ -1634,7 +1634,7 @@ ul.blue-text {
 
     .itens-footer ul {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         column-gap: 1.7rem;
         row-gap: 0.7rem;
     }
