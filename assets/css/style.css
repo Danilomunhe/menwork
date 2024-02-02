@@ -1225,6 +1225,55 @@ ul.blue-text {
         padding-right: 5%;
     }
 
+    .carousel-empresas {
+        background: linear-gradient(to top, #fff 60%, #3C72EC 40%);
+        width: 100%;
+
+    }
+
+    .container-empresas h3 {
+        font-size: 0.8rem;
+    }
+
+    .container-empresas h2 {
+        font-size: 1rem;
+    }
+
+
+    .container-servicos-mobile {
+        display: flex;
+        justify-content: center;
+        gap: 2.3rem;
+        min-height: 24rem;
+    }
+
+    .container-imagem h4 {
+        width: unset;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 0.8rem;
+        text-align: center;
+        width: 12.2rem;
+
+    }
+
+    .container-servicos-mobile .container-imagem {
+        width: 11.5rem;
+        height: 15.9rem;
+    }
+
+    .container-servicos-mobile .container-imagem img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-empresas .carousel.slide .carousel-control-prev-icon {
+        background-image: url("/assets/img/seta-esquerda.png") !important;
+    }
+
+    .carousel-empresas .carousel.slide .carousel-control-next-icon {
+        background-image: url("/assets/img/seta-direita.png") !important;
+    }
 
     .container-form form {
         width: 100%;
@@ -1290,9 +1339,10 @@ ul.blue-text {
     }
 
     .container-empresas p {
-        width: 33.4rem;
+        width: 35.4rem;
         font-size: 1.2rem;
         text-align: center;
+        line-height: 1.4rem;
     }
 
     .container-imagens-membros img {
