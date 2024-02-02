@@ -36,6 +36,11 @@ header {
 
 }
 
+.textos-banner-mobile img {
+    width: 46.6rem;
+    height: 5.8rem;
+}
+
 nav {
     width: 1440px;
     justify-content: center;
