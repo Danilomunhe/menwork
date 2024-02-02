@@ -1144,6 +1144,9 @@ ul.blue-text {
     .right-card-windows {
         width: 50%;
     } */
+    .servicos-windows {
+        justify-content: center;
+    }
 
     .left-card-windows {
         display: flex;
@@ -1273,12 +1276,12 @@ ul.blue-text {
     }
 
     .carousel-membros .carousel.slide .carousel-control-prev {
-        left: -5rem !important;
+        left: -4rem !important;
         top: -7rem;
     }
 
     .carousel-membros .carousel.slide .carousel-control-next {
-        right: -5rem !important;
+        right: -3rem !important;
         top: -7rem;
     }
 
