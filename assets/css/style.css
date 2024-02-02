@@ -661,11 +661,11 @@ h3.description-clientes {
 }
 
 .carousel-clientes .carousel.slide .carousel-control-prev-icon {
-    background-image: url("/assets/img/seta-esquerda.png") !important;
+    background-image: url("./assets/img/seta-esquerda.png") !important;
 }
 
 .carousel-clientes .carousel.slide .carousel-control-next-icon {
-    background-image: url("/assets/img/seta-direita.png") !important;
+    background-image: url("./assets/img/seta-direita.png") !important;
 }
 
 /*fim da seciton contato*/
@@ -838,11 +838,11 @@ ul.itens-menu li a.color-white {
 }
 
 .carousel-produto-servico .carousel.slide .carousel-control-prev-icon {
-    background-image: url("/assets/img/seta-esquerda.png") !important;
+    background-image: url("./assets/img/seta-esquerda.png") !important;
 }
 
 .carousel-produto-servico .carousel.slide .carousel-control-next-icon {
-    background-image: url("/assets/img/seta-direita.png") !important;
+    background-image: url("./assets/img/seta-direita.png") !important;
 }
 
 .container-servicos-cards {
@@ -1235,11 +1235,11 @@ ul.blue-text {
     }
 
     .carousel-servicos-windows .carousel.slide .carousel-control-prev-icon {
-        background-image: url("/assets/img/seta-esquerda.png") !important;
+        background-image: url("./assets/img/seta-esquerda.png") !important;
     }
 
     .carousel-servicos-windows .carousel.slide .carousel-control-next-icon {
-        background-image: url("/assets/img/seta-direita.png") !important;
+        background-image: url("./assets/img/seta-direita.png") !important;
     }
 
     .container-contato {
@@ -1298,11 +1298,11 @@ ul.blue-text {
     }
 
     .carousel-empresas .carousel.slide .carousel-control-prev-icon {
-        background-image: url("/assets/img/seta-esquerda.png") !important;
+        background-image: url("./assets/img/seta-esquerda.png") !important;
     }
 
     .carousel-empresas .carousel.slide .carousel-control-next-icon {
-        background-image: url("/assets/img/seta-direita.png") !important;
+        background-image: url("./assets/img/seta-direita.png") !important;
     }
 
     .container-form form {
