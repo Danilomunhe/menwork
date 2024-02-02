@@ -1104,15 +1104,18 @@ ul.blue-text {
         display: none;
     }
 
-    .container-servicos-windows-mobile {
+    .container-servicos-windows-mobile,
+    .container-servicos-apple-mobile {
         width: 100%;
     }
 
-    .header-card-windows-mobile {
+    .header-card-windows-mobile,
+    .header-card-apple-mobile {
         display: flex;
         width: 100%;
         justify-content: center;
         margin-bottom: 1.5rem;
+        align-items: center;
 
     }
 
@@ -1123,18 +1126,27 @@ ul.blue-text {
         margin-left: 1rem;
     }
 
-    .header-card-windows-mobile .textos {
+    .header-card-apple-mobile img {
+        width: 8.7rem;
+        height: 1rem;
+        margin-right: 1.3rem;
+    }
+
+    .header-card-windows-mobile .textos,
+    .header-card-apple-mobile .textos {
         width: 40%;
         text-align: center;
     }
 
-    .header-card-windows-mobile .textos h3 {
+    .header-card-windows-mobile .textos h3,
+    .header-card-apple-mobile .textos h3 {
         font-size: 0.8rem;
         font-weight: 500;
         color: #3C72EC;
     }
 
-    .header-card-windows-mobile .textos h2 {
+    .header-card-windows-mobile .textos h2,
+    .header-card-apple-mobile .textos h2 {
         font-size: 0.8rem;
         font-weight: 800;
     }
@@ -1150,6 +1162,11 @@ ul.blue-text {
     } */
     .servicos-windows {
         justify-content: center;
+    }
+
+    section.sevicos-autorizada {
+        justify-content: center;
+        padding: 3.3rem 0;
     }
 
     .left-card-windows {
@@ -1168,11 +1185,18 @@ ul.blue-text {
         gap: 1rem;
     }
 
-    .servicos-card-windows ul li {
+    .servicos-card-apple {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .servicos-card-windows ul li,
+    .servicos-card-apple ul li {
         position: relative;
     }
 
-    .servicos-card-windows ul li::before {
+    .servicos-card-windows ul li::before,
+    .servicos-card-apple ul li::before {
         content: '';
         position: absolute;
         left: -5px;
@@ -1188,6 +1212,12 @@ ul.blue-text {
         width: 12.6rem;
         height: 14.9rem;
         margin-left: 2rem;
+    }
+
+    .left-card-apple img {
+        width: 12.6rem;
+        height: 14.9rem;
+        margin-right: 2rem;
     }
 
     .carousel-servicos-windows .carousel.slide .carousel-inner {
@@ -1387,7 +1417,7 @@ ul.blue-text {
         margin-bottom: 1.2rem;
     }
 
-    carousel-mensagens-atendimento h3 {
+    .carousel-mensagens-atendimento h3 {
         font-size: 1.4rem;
     }
 
