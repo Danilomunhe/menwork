@@ -55,7 +55,7 @@ ul.itens-menu {
     font-size: 1.4rem;
     font-weight: 500;
     gap: 3.5rem;
-    line-height: 1.8rem;
+    /* line-height: 1.8rem; */
 
 }
 
@@ -80,7 +80,7 @@ ul.itens-menu li a {
     align-items: center;
     color: #FFF;
     font-size: 1.6rem;
-    line-height: 1.9rem;
+    /* line-height: 1.9rem; */
     font-weight: 500;
 }
 
@@ -312,7 +312,7 @@ section.container-empresas {
 .container-empresas h3 {
     font-size: 1.6rem;
     font-weight: 500;
-    line-height: 2rem;
+    /* line-height: 2rem; */
     color: #FFF;
     margin-top: 1.9rem;
 }
@@ -320,14 +320,14 @@ section.container-empresas {
 .container-empresas h2 {
     font-size: 4rem;
     font-weight: 800;
-    line-height: 4.9rem;
+    /* line-height: 4.9rem; */
     color: #fff;
 }
 
 .container-empresas p {
     font-size: 2rem;
     font-weight: 400;
-    line-height: 2.4rem;
+    /* line-height: 2.4rem; */
     color: #fff;
     text-align: center;
 }
@@ -380,7 +380,7 @@ section.container-empresas {
 .left-contato h2 {
     font-size: 3.5rem;
     font-weight: 800;
-    line-height: 3.9rem;
+    /* line-height: 3.9rem; */
     text-align: left;
     margin-bottom: 0.7rem;
 }
@@ -388,7 +388,7 @@ section.container-empresas {
 .left-contato p {
     font-size: 1.8rem;
     font-weight: 500;
-    line-height: 2.2rem;
+    /* line-height: 2.2rem; */
     text-align: left;
     margin-bottom: 1.7rem;
 }
@@ -412,7 +412,7 @@ section.container-empresas {
 textarea::placeholder {
     font-size: 1.4rem;
     font-weight: 300;
-    line-height: 1.7rem;
+    /* line-height: 1.7rem; */
     color: #C3C3C3;
 }
 
@@ -464,6 +464,10 @@ section.membros-equipe {
     margin-bottom: 7.4rem;
 }
 
+.carousel-membros.mobile-membros {
+    display: none;
+}
+
 .carousel-membros .carousel.slide .carousel-inner {
     width: 1100px !important;
 }
@@ -510,7 +514,7 @@ section.membros-equipe {
 .conteudo-info-contato h2 {
     font-size: 5.5rem;
     font-weight: 800;
-    line-height: 6.7rem;
+    /* line-height: 6.7rem; */
     text-align: center;
     color: #fff;
     margin-top: 3.3rem;
@@ -521,7 +525,7 @@ section.membros-equipe {
 .conteudo-info-contato p {
     font-size: 2.2rem;
     font-weight: 700;
-    line-height: 2.7rem;
+    /* line-height: 2.7rem; */
     text-align: center;
     color: #fff;
     margin-bottom: 1rem;
@@ -531,7 +535,7 @@ section.membros-equipe {
 .conteudo-info-contato span {
     font-size: 1.8rem;
     font-weight: 300;
-    line-height: 2.2rem;
+    /* line-height: 2.2rem; */
     text-align: center;
     color: #fff;
     padding-left: 2rem;
@@ -554,7 +558,7 @@ section.membros-equipe {
     font-family: Montserrat;
     font-size: 2.2rem;
     font-weight: 700;
-    line-height: 2.7rem;
+    /* line-height: 2.7rem; */
     text-transform: uppercase;
 }
 
@@ -592,8 +596,9 @@ section.membros-equipe {
 .caixa-mensagem p {
     font-size: 3rem;
     font-weight: 700;
-    line-height: 3.7rem;
+    /* line-height: 3.7rem; */
     text-align: center;
+    width: 78.1rem;
 
 }
 
@@ -691,7 +696,7 @@ footer {
 .container-logo h3 {
     font-weight: 800;
     font-size: 1.8rem;
-    line-height: 2.1rem;
+    /* line-height: 2.1rem; */
     color: #fff
 }
 
@@ -704,7 +709,7 @@ footer {
 .itens-footer h3 {
     font-weight: 800;
     font-size: 1.8rem;
-    line-height: 2.1rem;
+    /* line-height: 2.1rem; */
     color: #fff;
     margin-bottom: 0.6rem;
 }
@@ -712,14 +717,14 @@ footer {
 .itens-footer ul li a {
     font-weight: 400;
     font-size: 1rem;
-    line-height: 1.3rem;
+    /* line-height: 1.3rem; */
     color: #fff
 }
 
 .itens-footer a {
     font-weight: 400;
     font-size: 1.4rem;
-    line-height: 1.7rem;
+    /* line-height: 1.7rem; */
     color: #fff;
     margin-bottom: 0.6rem;
 }
@@ -897,9 +902,7 @@ ul.itens-menu li a.color-white {
 }
 
 .azul-servico {
-
-    background: linear-gradient(to right, #a3bdf9, #e7eeff);
-
+    background-color: #e7eeff;
     border: 3px solid #A3BDF9
 }
 
@@ -919,7 +922,7 @@ ul.blue-text {
     font-size: 1.4rem;
     font-weight: 500;
     gap: 3.5rem;
-    line-height: 1.8rem;
+    /* line-height: 1.8rem; */
 
 }
 
@@ -1036,3 +1039,401 @@ ul.blue-text {
 }
 
 /* Fim Service */
+.esconder-desk {
+    display: none;
+}
+
+@media (max-width:768px) {
+    header .menu {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    header .menu img {
+        width: 4.8rem;
+        height: 0.64rem;
+    }
+
+    ul.itens-menu {
+        font-size: 0.6rem;
+        gap: 1.1rem;
+    }
+
+    .button-contato {
+        width: 5.1rem;
+        height: 1rem;
+    }
+
+    .button-contato a {
+        font-size: 0.5rem;
+    }
+
+    .banner video {
+        display: none;
+    }
+
+    .banner {
+        width: 100%;
+    }
+
+    .textos-banner-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .textos-banner-mobile img {
+        width: 28.1rem;
+        height: 3.5rem;
+    }
+
+    .banner h3,
+    .banner p {
+        font-size: 1.2rem;
+        width: 31.5rem;
+        padding: 0;
+    }
+
+    .button-qs {
+        display: none;
+    }
+
+    .container-servicos-windows-mobile {
+        width: 100%;
+    }
+
+    .header-card-windows-mobile {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+
+    }
+
+    .header-card-windows-mobile img {
+        width: 5.9rem;
+        height: 1.9rem;
+        justify-items: flex-end;
+        margin-left: 1rem;
+    }
+
+    .header-card-windows-mobile .textos {
+        width: 40%;
+        text-align: center;
+    }
+
+    .header-card-windows-mobile .textos h3 {
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #3C72EC;
+    }
+
+    .header-card-windows-mobile .textos h2 {
+        font-size: 0.8rem;
+        font-weight: 800;
+    }
+
+    .container-card-windows-mobile {
+        display: flex;
+        justify-content: center;
+    }
+
+    /* .left-card-windows,
+    .right-card-windows {
+        width: 50%;
+    } */
+
+    .left-card-windows {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-card-windows h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    .servicos-card-windows {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .servicos-card-windows ul li {
+        position: relative;
+    }
+
+    .servicos-card-windows ul li::before {
+        content: '';
+        position: absolute;
+        left: -5px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0.3rem;
+        height: 0.3rem;
+        background-color: #3498db;
+        border-radius: 2px;
+    }
+
+    .right-card-windows img {
+        width: 12.6rem;
+        height: 14.9rem;
+        margin-left: 2rem;
+    }
+
+    .carousel-servicos-windows .carousel.slide .carousel-inner {
+        width: 35rem !important;
+    }
+
+    .carousel-servicos-windows .carousel.slide .carousel-control-prev {
+        left: -1rem !important;
+        top: 2rem;
+    }
+
+    .carousel-servicos-windows .carousel.slide .carousel-control-next {
+        right: -1rem !important;
+        top: 2rem;
+    }
+
+    .carousel-servicos-windows .carousel.slide .carousel-control-prev-icon {
+        background-image: url("/assets/img/seta-esquerda.png") !important;
+    }
+
+    .carousel-servicos-windows .carousel.slide .carousel-control-next-icon {
+        background-image: url("/assets/img/seta-direita.png") !important;
+    }
+
+    .container-contato {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .conteudo-contato {
+        width: 100%;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+
+    .container-form form {
+        width: 100%;
+    }
+
+    .container-form form input,
+    textarea {
+        width: 100%;
+    }
+
+    .left-contato,
+    .right-contato {
+        width: 100%;
+    }
+
+    .right-contato {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .container-info-contato h2 {
+        font-size: 1.8rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .container-info-contato p {
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .membros-equipe h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .membros-equipe p {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 34.1rem;
+        margin-bottom: 1.3rem;
+    }
+
+    .carousel-membros.mobile-membros {
+        display: block;
+    }
+
+    .carousel-membros .carousel.slide .carousel-inner {
+        width: 35rem !important;
+    }
+
+    .container-imagens-membros {
+        gap: 1.2rem;
+    }
+
+    .carousel-membros .carousel.slide .carousel-control-prev {
+        left: -5rem !important;
+        top: -7rem;
+    }
+
+    .carousel-membros .carousel.slide .carousel-control-next {
+        right: -5rem !important;
+        top: -7rem;
+    }
+
+    .container-imagens-membros img {
+        width: 10.5rem;
+        height: 13.6rem;
+    }
+
+    .conteudo-info-contato h2 {
+        font-size: 1.8rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .info-contato img {
+        width: 36.9rem;
+        min-height: 18rem;
+    }
+
+    .button-atendimento {
+        width: 11.1rem;
+        height: 3rem;
+    }
+
+    .button-atendimento a {
+        font-size: 1.4rem;
+    }
+
+    .conteudo-info-contato p {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 31rem;
+    }
+
+    .conteudo-info-contato span {
+        font-size: 1.2rem;
+        text-align: center;
+        width: 32rem;
+        margin-bottom: 1.2rem;
+    }
+
+    carousel-mensagens-atendimento h3 {
+        font-size: 1.4rem;
+    }
+
+    .caixa-mensagem p {
+        font-size: 1.4rem;
+        /* line-height: 1.7rem; */
+        text-align: center;
+        width: 31.8rem;
+    }
+
+    .icon-user-message {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .user-message span {
+        font-size: 1.4rem;
+    }
+
+    .container-clientes {
+        width: 100%;
+    }
+
+    h2.titles-clientes {
+        font-size: 1.6rem;
+    }
+
+    h3.description-clientes {
+        font-size: 1.2rem;
+    }
+
+    .carousel-clientes .carousel.slide .carousel-inner {
+        width: 35rem !important;
+    }
+
+    .carousel-clientes .carousel.slide .carousel-control-next {
+        display: none;
+    }
+
+    .carousel-clientes .carousel.slide .carousel-control-prev {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+        justify-content: unset;
+    }
+
+    .container-logo {
+        width: 12.4rem;
+        height: 1.5rem;
+        margin-left: 2rem;
+        margin-right: 6.6rem;
+        margin-top: 1rem;
+        gap: 0;
+    }
+
+    .container-logo a {
+        color: #fff;
+        font-size: 1.2rem;
+        margin-top: .7rem;
+
+    }
+
+    .esconder {
+        display: none;
+    }
+
+    .itens-footer ul {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1.7rem;
+        row-gap: 0.7rem;
+    }
+
+    .itens-footer h3 {
+        font-size: 1.2rem;
+    }
+
+    .itens-footer ul li {
+        width: 8.5rem;
+    }
+
+    .itens-footer ul li a {
+        font-size: 1.2rem;
+    }
+
+    .itens-footer ul :first-child {
+        order: 1;
+    }
+
+    .itens-footer ul :nth-of-type(2) {
+        order: 3;
+    }
+
+    .itens-footer ul :nth-of-type(3) {
+        order: 2;
+    }
+
+    .itens-footer ul :nth-of-type(4) {
+        order: 4;
+    }
+
+    .icones-flutuantes {
+        position: absolute;
+        display: flex;
+        align-items: end;
+        right: 0;
+        bottom: 0;
+        min-height: 1rem !important;
+    }
+
+    .esconder-desk {
+        display: block;
+    }
+}
