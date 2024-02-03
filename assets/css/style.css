@@ -40,7 +40,7 @@ header {
     padding-left: 20%;
 }
 
-.textos-banner-mobile img:first-child {
+.textos-banner-mobile .principal {
     width: 46.6rem;
     height: 5.8rem;
 }
@@ -1273,7 +1273,7 @@ ul.blue-text {
         padding-left: 5%;
     }
 
-    .textos-banner-mobile img:first-child {
+    .textos-banner-mobile .principal {
         width: 28.1rem;
         height: 3.5rem;
     }
