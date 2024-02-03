@@ -36,7 +36,7 @@ header {
 
 }
 
-.textos-banner-mobile img {
+.textos-banner-mobile img:first-child {
     width: 46.6rem;
     height: 5.8rem;
 }
@@ -1054,6 +1054,165 @@ ul.blue-text {
     display: none;
 }
 
+/* Início Sobre */
+
+.banner-sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    background-image: url("/assets/img/banner-sobre.png");
+    background-size: cover;
+}
+
+.banner-sobre h3 {
+    font-size: 10.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.section-description {
+    display: flex;
+    width: 1440px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.paragrph-first {
+    font-size: 2.0em;
+    padding: 2.0em 0 2.0em 0;
+}
+
+.values {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+
+.values h3 {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #2A6EE5;
+    width: 63.9rem;
+    margin-top: 2.2rem;
+    margin-bottom: 2.2rem;
+}
+
+.values p {
+    font-size: 3rem;
+    font-weight: 400;
+    width: 63.9rem;
+}
+
+.values .container-textos {
+    flex-grow: 2;
+    padding-left: 10%;
+}
+
+.values .container-imagem-sobre {
+    flex-grow: 1;
+    display: flex;
+    justify-content: end;
+
+}
+
+.values .container-imagem-sobre img {
+    width: 100%;
+}
+
+.differential {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 88rem;
+    background-image: url("/assets/img/diferencial.png");
+}
+
+.differential p {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #fff;
+    margin-top: 5rem;
+}
+
+.differential h3 {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 5.1rem;
+}
+
+.container-clareza-preco {
+    display: flex;
+    width: 100%;
+}
+
+.clareza,
+.preco {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.clareza {
+    padding-left: 10%;
+}
+
+.compromisso {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.clareza p,
+.preco p,
+.compromisso p {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+.compromisso p {
+    text-align: center;
+    width: 113rem;
+}
+
+.clareza h3 {
+    width: 54.2rem;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 2.2rem;
+}
+
+.preco h3 {
+    width: 54.2rem;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 1.8rem;
+}
+
+.compromisso h3 {
+    width: 100%;
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: 2.8rem;
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+.clareza p,
+.preco p {
+    width: 60rem;
+}
+
+/* Fim Sobre */
 @media (max-width:768px) {
     body {
         overflow-x: hidden;
@@ -1679,6 +1838,105 @@ ul.blue-text {
         right: 0;
         bottom: 0;
         min-height: 1rem !important;
+    }
+
+    .bg-blue.sobre {
+        height: 3rem;
+    }
+
+    .banner-sobre {
+        background-image: url("/assets/img/banner-sobre.png");
+        width: 100%;
+        height: 17rem;
+        background-size: cover;
+    }
+
+    .banner-sobre h3 {
+        font-size: 4rem;
+    }
+
+    .paragrph-first {
+        width: 32.5rem;
+        font-size: 1.4rem;
+    }
+
+    .section-description {
+        width: 100%;
+    }
+
+    .values {
+        flex-direction: column-reverse;
+
+    }
+
+    .values .container-imagem-sobre {
+        width: 100%;
+        justify-content: center;
+        padding: 0 10%;
+    }
+
+    .container-imagem-sobre img {
+        width: 33.4rem;
+        height: 23.6rem;
+        object-fit: cover;
+    }
+
+    .values h3 {
+        font-size: 1.9rem;
+        margin-top: 1.2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+
+    .values p {
+        font-size: 1.2rem;
+        width: 33.4rem;
+        width: 100%;
+    }
+
+    .differential {
+        background-image: url("/assets/img/diferencial-mobile.png");
+        height: auto;
+    }
+
+    .differential p {
+        font-size: 1.2rem;
+        margin-top: 0.8rem;
+    }
+
+    .differential h3 {
+        font-size: 1.4rem;
+        margin-top: 0.8rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .clareza h3,
+    .preco h3 {
+        margin-bottom: 0.4rem;
+        width: 100%;
+    }
+
+    .preco h3 {
+        width: 16.9rem;
+    }
+
+    .compromisso h3 {
+        margin-bottom: 0.4rem;
+    }
+
+    .clareza p {
+        width: 14.3rem;
+        margin-top: 0;
+    }
+
+    .preco p {
+        width: 16.4rem;
+        margin-top: 0;
+    }
+
+    .compromisso p {
+        width: 32.9rem;
+        margin-bottom: 1.70rem;
     }
 
     .esconder-desk {
