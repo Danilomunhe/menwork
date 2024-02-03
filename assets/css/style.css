@@ -1062,7 +1062,7 @@ ul.blue-text {
     align-items: center;
     width: 100%;
     height: 600px;
-    background-image: url("/assets/img/banner-sobre.png");
+    background-image: url("https://witbiz.com.br/menwork/assets/img/banner-sobre.png");
     background-size: cover;
 }
 
@@ -1082,7 +1082,8 @@ ul.blue-text {
 }
 
 .paragrph-first {
-    font-size: 2.0em;
+    font-size: 3rem;
+    text-align: left;
     padding: 2.0em 0 2.0em 0;
 }
 
@@ -1131,7 +1132,7 @@ ul.blue-text {
     align-items: center;
     width: 100%;
     height: 88rem;
-    background-image: url("/assets/img/diferencial.png");
+    background-image: url("https://witbiz.com.br/menwork/assets/img/diferencial.png");
 }
 
 .differential p {
@@ -1845,7 +1846,7 @@ ul.blue-text {
     }
 
     .banner-sobre {
-        background-image: url("/assets/img/banner-sobre.png");
+        background-image: url("https://witbiz.com.br/menwork/assets/img/banner-sobre-mobile.png");
         width: 100%;
         height: 17rem;
         background-size: cover;
@@ -1895,7 +1896,7 @@ ul.blue-text {
     }
 
     .differential {
-        background-image: url("/assets/img/diferencial-mobile.png");
+        background-image: url("https://witbiz.com.br/menwork/assets/img/diferencial-mobile.png");
         height: auto;
     }
 
