@@ -282,6 +282,8 @@ section.sevicos-autorizada {
     font-weight: 400;
     margin-top: 1.9rem;
     margin-bottom: 10rem;
+    width: 75.2rem;
+
 }
 
 .listas-servicos-gamer {
@@ -465,6 +467,8 @@ section.membros-equipe {
     font-weight: 400;
     color: #fff;
     margin-bottom: 1.6rem;
+    width: 88.7rem;
+    text-align: center;
 }
 
 .container-imagens-membros {
@@ -762,7 +766,7 @@ footer {
 }
 
 .fundo-pc-gamer {
-    background-color: #342E33;
+    background-color: rgb(58, 53, 57);
     width: 100%;
 }
 
@@ -920,7 +924,7 @@ ul.itens-menu li a.color-white {
 /* Início modo azul */
 
 .bg-blue {
-    background-color: rgb(61, 114, 237);
+    background-color: rgb(81, 126, 234);
 }
 
 .blue-text li a {
@@ -992,7 +996,7 @@ ul.blue-text {
     width: 100%;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, rgb(61, 114, 237) 0, rgb(61, 114, 237) 85%, #fff 15%);
+    background: linear-gradient(to bottom, rgb(81, 126, 234), rgb(81, 126, 234) 85%, #fff 15%);
     padding-top: 12em;
 }
 
@@ -1268,7 +1272,7 @@ ul.blue-text {
         padding-left: 5%;
     }
 
-    .textos-banner-mobile img {
+    .textos-banner-mobile img:first-child {
         width: 28.1rem;
         height: 3.5rem;
     }
@@ -1649,6 +1653,11 @@ ul.blue-text {
         padding-left: 0;
     }
 
+    .page-title p {
+        padding-right: 0;
+        width: 30rem;
+    }
+
     .page-title h3 {
         font-size: 3.4rem;
     }
@@ -1683,7 +1692,7 @@ ul.blue-text {
 
     .services {
         padding: 0;
-        background: linear-gradient(to top, #fff 70%, #3C72EC 30%);
+        background: linear-gradient(to top, #fff 70%, rgb(81, 126, 234) 30%);
     }
 
     .services .carousel-produto-servico.esconder-desk {
