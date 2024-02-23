@@ -24,6 +24,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 header {
@@ -36,9 +37,9 @@ header {
 
 }
 
-.textos-banner-mobile {
+/* .textos-banner-mobile {
     padding-left: 20%;
-}
+} */
 
 .textos-banner-mobile .principal {
     width: 46.6rem;
@@ -46,14 +47,14 @@ header {
 }
 
 nav {
-    width: 1440px;
+    width: 1150px;
     justify-content: center;
     align-items: center;
 }
 
 header .menu {
     display: flex;
-    width: 1440px;
+    width: 1150px;
     height: 100%;
     align-items: center;
     justify-content: space-between;
@@ -102,15 +103,50 @@ ul.itens-menu li a {
 
 
 .banner {
-    width: 1440px;
+    width: 1150px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.banner h1 {
+    font-size: 3.6rem;
+    font-weight: 700;
+    text-align: left;
+
+}
+
+.button-home {
+    width: 25rem;
+    height: 5rem;
+
+}
+
+.button-home a {
+    background-color: white;
+    border-radius: 2.5rem;
+    border: 2px solid #3C72EC;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3C72EC;
+    font-size: 1.4rem;
+    font-weight: 800;
+    transition: all linear 0.5s;
+}
+
+.button-home a:hover {
+    color: #fff;
+    border: 2px solid #fff;
+    background-color: #3C72EC;
+}
+
 .banner h3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     margin: 5px 0px 5px 0px;
+    color: #3C72EC;
 
 }
 
@@ -124,193 +160,130 @@ ul.itens-menu li a {
 }
 
 /* Fim CSS Banner */
-/*inicio da section autorizada*/
-section.sevicos-autorizada {
+
+/*Inicio section servico*/
+section.servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8.8rem;
     width: 100%;
-    display: flex;
-    padding-top: 8.3rem;
-    padding-bottom: 8.3rem;
+    background: linear-gradient(to top, #3C72EC 84%, #fff 16%);
 }
 
-.imagem-servicos {
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    padding-top: 3rem;
+.container-servicos {
+    margin-bottom: 8.8rem;
 }
 
-.imagem-servicos :first-of-type {
-    width: 28.4rem;
-    height: 2.4rem;
-    align-self: center;
-    margin-bottom: 2.5rem;
-}
-
-.textos-autorizada {
-    display: flex;
-    flex-direction: column;
-    padding-left: 3.6rem;
-}
-
-.titles-autorizadas {
-    width: 40.9rem;
-}
-
-.textos-autorizada h3 {
-    font-size: 1.6rem;
-    font-weight: 500;
-    color: #3C72EC;
-    text-align: center;
-}
-
-.textos-autorizada h2 {
-    font-size: 3.5rem;
-    font-weight: 800;
-    padding-left: 1rem;
-    margin-bottom: 4.7rem;
-}
-
-.produtos-servicos {
-    display: flex;
-    gap: 2.9rem;
-    margin-bottom: 2.2rem;
-}
-
-.produtos-servicos li {
-    font-size: 3rem;
-    font-weight: 700;
-}
-
-.textos-autorizada p {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 10rem;
-}
-
-.textos-autorizada span {
-    font-size: 2rem;
-    font-weight: 800;
-}
-
-.listas-de-servicos {
-    display: flex;
-    gap: 10rem;
-    list-style-type: square;
-    padding-left: 2rem;
-}
-
-.listas-de-servicos li {
-    position: relative;
-    font-size: 1.6rem;
-    font-weight: 400;
-}
-
-.listas-de-servicos li::before {
-    content: '';
-    position: absolute;
-    left: -15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1rem;
-    height: 1rem;
-    background-color: #3498db;
-    border-radius: 2px;
-}
-
-
-/*fim da section autorizada*/
-
-/*incio da seciton gamer windows*/
-.servicos-windows {
-    display: flex;
-    width: 100%;
-    padding-bottom: 3.7rem;
-}
-
-.conteudo-servico-windows {
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    padding-left: 14.5rem;
-}
-
-.titles-conteudo-gamer {
-    align-self: center;
-    padding-left: 20.2rem;
-}
-
-.titles-conteudo-gamer h3 {
+.textos-servicos h3 {
     font-size: 1.6rem;
     font-weight: 500;
     text-align: center;
-    color: #3C72EC;
-
 }
 
-.titles-conteudo-gamer h2 {
-    font-size: 3.5rem;
+.textos-servicos h2 {
+    font-size: 3.2rem;
     font-weight: 800;
-    margin-bottom: 6.7rem;
+    color: #3C72EC;
+    text-align: center;
+    margin-bottom: 1.6rem;
+
 }
 
-.imagem-servicos-gamer {
-    width: 30%;
+.container-cards-servico {
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+
+.card-servico {
+    width: 330px;
+    min-height: 394px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: #F0F0F0;
 }
 
-.imagem-servicos-gamer img:first-child {
-    align-self: center;
-    width: 15rem;
-    height: 5rem;
-    margin-bottom: 2.8rem;
-    margin-top: 2rem;
-}
-
-.produtos-gamers {
+.header-card {
     display: flex;
-    gap: 2.6rem;
+    align-items: center;
+    gap: 20px;
+    background: linear-gradient(to top, #F0F0F0 60%, #fff 40%);
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 100%;
 }
 
-.produtos-gamers li {
-    font-size: 3rem;
+.header-card h3 {
+    margin-top: 5rem;
+    font-size: 25px;
     font-weight: 700;
-    text-align: center;
-}
-
-.conteudo-servico-windows p {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-top: 1.9rem;
-    margin-bottom: 10rem;
-    width: 75.2rem;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
 
 }
 
-.listas-servicos-gamer {
+.icon-servico {
+    background: #C3C3C3;
+    width: 102px;
+    height: 102px;
+    border-radius: 50%;
     display: flex;
-    gap: 6rem;
+    justify-content: center;
+    align-items: center;
 }
 
-.listas-servicos-gamer ul li {
-    position: relative;
-    font-size: 1.6rem;
-    font-weight: 400;
+.linha-card {
+    margin-top: 20px;
+    height: 1px;
+    background-color: #7A7A7A;
+    width: 80%;
 }
 
-.listas-servicos-gamer li::before {
-    content: '';
-    position: absolute;
-    left: -15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 1rem;
-    height: 1rem;
-    background-color: #3498db;
-    border-radius: 2px;
+ul.lista-servicos-card {
+    margin: 21px 0 !important;
 }
 
-/*fim da section windows*/
+.lista-servicos-card li {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+
+}
+
+.button-saiba-mais {
+    background-color: #E8E7E7ed;
+    width: 100%;
+    height: 70px;
+    border: none;
+    font-size: 16px;
+    font-weight: 800;
+    color: #000000;
+
+}
+
+.alternativo {
+    background-color: #333033;
+}
+
+.header-alternativo {
+    background: linear-gradient(to top, #333033 60%, #3C72EC 40%);
+}
+
+.header-card h3.white {
+    color: #fff;
+}
+
+.card-servico.alternativo .lista-servicos-card li {
+    color: #fff;
+}
+
+.card-servico.alternativo .button-saiba-mais {
+    background-color: #4A484A;
+    color: #fff;
+}
 
 /*inicio section empresas*/
 section.container-empresas {
@@ -378,7 +351,7 @@ section.container-empresas {
 }
 
 .conteudo-contato {
-    width: 1440px;
+    width: 1150px;
     display: flex;
 }
 
@@ -412,7 +385,7 @@ section.container-empresas {
 }
 
 .container-form form input {
-    width: 54rem;
+    width: 50rem;
     height: 2.6rem;
     border: 1px solid #3C72EC;
     outline: none;
@@ -429,7 +402,7 @@ textarea::placeholder {
 }
 
 textarea {
-    width: 54rem;
+    width: 50rem;
     resize: none !important;
     padding: 0.5rem;
     border: 1px solid #3C72EC;
@@ -487,11 +460,11 @@ section.membros-equipe {
 }
 
 .carousel-membros .carousel.slide .carousel-control-prev {
-    left: -20rem !important;
+    left: -12rem !important;
 }
 
 .carousel-membros .carousel.slide .carousel-control-next {
-    right: -20rem !important;
+    right: -12rem !important;
 }
 
 /*Fim section equipe*/
@@ -667,11 +640,11 @@ h3.description-clientes {
 }
 
 .carousel-clientes .carousel.slide .carousel-control-prev {
-    left: -20rem !important;
+    left: -10rem !important;
 }
 
 .carousel-clientes .carousel.slide .carousel-control-next {
-    right: -20rem !important;
+    right: -10rem !important;
 }
 
 .carousel-clientes .carousel.slide .carousel-control-prev-icon {
@@ -694,10 +667,10 @@ footer {
 }
 
 .container-footer {
-    width: 1440px;
+    width: 1150px;
     display: flex;
     align-items: center;
-    gap: 200px;
+    gap: 190px;
 }
 
 .container-logo {
@@ -982,7 +955,7 @@ ul.blue-text {
 
 .container-banner {
     display: flex;
-    width: 1440px;
+    width: 1150px;
     align-items: center;
     justify-content: center;
 }
@@ -1003,7 +976,7 @@ ul.blue-text {
 
 .container-service {
     display: flex;
-    width: 1440px;
+    width: 1150px;
     align-items: center;
     justify-content: center;
 
@@ -1089,7 +1062,7 @@ ul.blue-text {
 
 .section-description {
     display: flex;
-    width: 1440px;
+    width: 1150px;
     justify-content: center;
     align-items: center;
 
@@ -1270,7 +1243,7 @@ ul.blue-text {
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding-left: 5%;
+        /* padding-left: 5%; */
     }
 
     .textos-banner-mobile .principal {
@@ -1965,5 +1938,10 @@ ul.blue-text {
 
     .esconder-desk {
         display: block;
+    }
+
+    .container-footer {
+        width: 100%;
+        gap: 5px;
     }
 }
