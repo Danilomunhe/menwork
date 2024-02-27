@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
     list-style: none;
     text-decoration: none;
 }
@@ -34,7 +34,9 @@ header {
     height: 7rem;
     justify-content: center;
     align-items: center;
-
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
 
 /* .textos-banner-mobile {
@@ -173,6 +175,9 @@ section.servicos {
 
 .container-servicos {
     margin-bottom: 8.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .textos-servicos h3 {
@@ -1200,6 +1205,146 @@ ul.blue-text {
     width: 60rem;
 }
 
+.modal-servicos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.container-modal-sevicos {
+    width: 80%;
+    min-height: 550px;
+    background: #fff;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: #F0F0F0;
+}
+
+.modal-header-servicos {
+    background: linear-gradient(to top, #F0F0F0 50%, #fff 50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.modal-header-servicos.alternativo-modal {
+    background: linear-gradient(to top, #333033 50%, #3C72EC 50%);
+}
+
+.icon-modal {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 4.1rem;
+}
+
+.icon-modal img {
+    width: 7rem;
+    height: 7rem;
+}
+
+.title-modal {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.title-modal h2 {
+    font-size: 3.6rem;
+    font-weight: 700;
+
+}
+
+.title-modal .linha-card {
+    margin-top: 0;
+}
+
+.modal-content-servicos {
+    height: auto;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.modal-content-servicos.alternativo {
+    background-color: #333033;
+}
+
+.lista-de-servicos-modal {
+    column-count: 2;
+    column-gap: 10rem
+}
+
+.lista-de-servicos-modal li {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.lista-de-servicos-modal.branco li {
+    color: #fff;
+}
+
+.branco {
+    color: #fff;
+}
+
+.modal-footer-servicos {
+    flex-grow: 1;
+    background-color: #2A6EE5;
+    display: flex;
+}
+
+.close-button {
+    background-color: #E7EEFF;
+    color: red;
+    font-weight: 700;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+}
+
+.button-modal-footer {
+    width: 100%;
+    border: none;
+    flex-grow: 1;
+    font-size: 3rem;
+    font-weight: 700;
+    background-color: #E8E7E7;
+}
+
+.button-modal-footer.alternativo {
+    background-color: #4A484A;
+    color: #fff;
+}
+
 /* Fim Sobre */
 @media (max-width:768px) {
     body {
@@ -1944,4 +2089,73 @@ ul.blue-text {
         width: 100%;
         gap: 5px;
     }
+}
+
+.slider-container {
+    width: 75vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.slider {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider-button {
+    font-size: 5rem;
+    color: transparent;
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s all linear;
+    user-select: none;
+}
+
+.slider-button:hover {
+    color: yellow;
+    background-color: #0008;
+}
+
+.anterior {
+    position: absolute;
+    left: 0;
+}
+
+.proximo {
+    position: absolute;
+    right: 0;
+}
+
+.slider-item-container {
+    height: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.slider-item {
+    background-color: blueviolet;
+    width: 80vw;
+    height: 100%;
+
+}
+
+.slider-item:first-child {
+    margin-left: -80vw;
+
+}
+
+.slider-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
