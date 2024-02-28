@@ -3,7 +3,7 @@ AOS.init();
 const modal = document.querySelector(".modal-servicos");
 const closeButton = document.querySelector(".close-button");
 const buttons = document.querySelectorAll(".button-saiba-mais");
-const sliderItemContainer = document.querySelector(".slider-item-container");
+const sliderItemContainer = document.getElementById("containerNormal");
 const sliderItemContainerAlternativo = document.getElementById(
   "containerAlternativo"
 );
@@ -14,6 +14,7 @@ let title = document.getElementById("titleModal");
 let listaServicos = document.getElementById("modalContent");
 let headerModal = document.querySelector(".modal-header-servicos");
 let buttonModal = document.querySelector(".button-modal-footer");
+let iconModal = document.querySelector(".icon-modal");
 
 function abrirModal() {
   modal.style.display = "flex";
@@ -36,6 +37,7 @@ function preencherModal(servicoEncontrado) {
   listaServicos.classList.remove("alternativo");
   title.classList.remove("branco");
   buttonModal.classList.remove("alternativo");
+  iconModal.classList.remove("fundo-branco");
 
   let ulServicos = document.createElement("ul");
   ulServicos.classList.add("lista-de-servicos-modal");
@@ -56,6 +58,7 @@ function preencherModal(servicoEncontrado) {
     title.classList.add("branco");
     buttonModal.classList.add("alternativo");
     ulServicos.classList.add("branco");
+    iconModal.classList.add("fundo-branco");
   }
   listaServicos.appendChild(ulServicos);
   abrirModal();
@@ -86,7 +89,7 @@ const proximoItem = (slide) => {
   if (slide === 0) {
     const primeiroItem = sliderItems[0];
     sliderItemContainer.appendChild(primeiroItem);
-    sliderItems = document.querySelectorAll(".slide-item");
+    sliderItems = document.querySelectorAll(".containerNormal");
   } else {
     const primeiroItemAlternativo = sliderItemsAlternativo[0];
     sliderItemContainerAlternativo.appendChild(primeiroItemAlternativo);
@@ -98,22 +101,23 @@ const itemAnterior = (slide) => {
   if (slide === 0) {
     const ultimoItem = sliderItems[sliderItems.length - 1];
     sliderItemContainer.prepend(ultimoItem);
-    sliderItems = document.querySelectorAll(".item-alternativo");
+    sliderItems = document.querySelectorAll(".containerNormal");
+    console.log("Teste");
   } else {
-    const ultimoItem = sliderItems[sliderItemsAlternativo.length - 1];
-    sliderItemContainerAlternativo.prepend(ultimoItem);
+    const ultimoItemAlternativo =
+      sliderItemsAlternativo[sliderItemsAlternativo.length - 1];
+    sliderItemContainerAlternativo.prepend(ultimoItemAlternativo);
     sliderItemsAlternativo = document.querySelectorAll(".item-alternativo");
   }
 };
 
 const servicos = {
-  notebook: {
-    titulo: "Notebook",
-    icone: "./assets/img/icon-notebook.png",
+  notebookGamer: {
+    titulo: "Notebook Gamer",
+    icone: "./assets/img/icon-controle.png",
     listaDeServicos: [
-      "Formatação (Reinstalação do Windows, drivers e programas básicos).",
-      "Backup (Fazemos cópias dos dados do Cliente, para um HD externo ou para a própria máquina após instalação do sistema.)",
-      "Formatação com backup (Backup dos arquivos para outra unidade de armazenamento, reinstalação do sistema, drivers e programas básicos finalizado com retorno do backup.)",
+      "Formatação",
+      "Formatação com backup",
       "Instalação de programas",
       "Troca de Teclado",
       "Troca de Bateria",
@@ -123,25 +127,78 @@ const servicos = {
       "Troca de carcaça",
       "Troca de conectores de energia",
       "Troca de Cooler",
-      "Reparo de carcaça (Caso seja possível realizamos um reparo a base de resina, onde reconstruímos as partes danificadas da carcaça.)",
-      "Reparo de placa mãe (Realizado em casos que a placa mãe do notebook apresenta componentes queimados ou troca de conectores danificados)",
-      "Limpeza interna (Desmontamos e limpamos os componentes fisicamente, trocando pasta térmica e adesivos térmicos)",
-      "Upgrade de SSD (Seja para mais espaço ou para máquinas que ainda não possui)",
-      "Upgrade de Memória Ram (para casos em que o cliente deseja maior desempenho para trabalho ou jogos).",
+      "Reparo de carcaça ",
+      "Reparo de placa mãe ",
+      "Limpeza interna ",
+      "Upgrade de SSD ",
+      "Upgrade de Memória Ram",
     ],
     alternativo: true,
   },
   desktopGamer: {
-    titulo: "Desktop Gamer",
+    titulo: "PC Gamer",
     icone: "./assets/img/icon-pc.png",
     listaDeServicos: [
-      "Formatação (Reinstalação do Windows, drivers e programas básicos).",
-      "Backup (Fazemos cópias dos dados do Cliente, para um HD externo ou para a própria máquina após instalação do sistema.)",
-      "Formatação com backup (Backup dos arquivos para outra unidade de armazenamento, reinstalação do sistema, drivers e programas básicos finalizado com retorno do backup.)",
-      "Limpeza interna (Desmontamos e limpamos os componentes fisicamente, trocando pasta térmica e adesivos térmicos)",
+      "Formatação.",
+      "Backup ",
+      "Formatação com backup",
+      "Limpeza interna",
       "Montagem de Máquina Nova",
-      "Upgrade de SSD (Seja para mais espaço ou para máquinas que ainda não possui)",
-      "Upgrade de Memória Ram (para casos em que o cliente deseja maior desempenho para trabalho ou jogos).",
+      "Upgrade de SSD",
+      "Upgrade de Memória Ram",
+      "Instalação de Programas",
+      "Instalação de Placa de Vídeo",
+      "Troca de Placa de Vídeo",
+      "Instalação de Water cooler",
+      "Troca de Water Cooler",
+      "Instalação Fonte",
+      "Troca de Fonte",
+      "Troca de Processador",
+      "Upgrade de Processador",
+      "Troca de Placa mãe",
+      "Upgrade de Placa mãe",
+      "Troca de Cooler",
+      "Instalação de Cooler",
+      "Organização de cabeamento",
+      "Sistema de ventilação eficiente",
+      "Consultoria para escolha de peças",
+    ],
+    alternativo: true,
+  },
+  notebook: {
+    titulo: "Notebook",
+    icone: "./assets/img/icon-notebook.png",
+    listaDeServicos: [
+      "Formatação",
+      "Formatação com backup",
+      "Instalação de programas",
+      "Troca de Teclado",
+      "Troca de Bateria",
+      "Troca Webcam",
+      "Troca de Touchpad",
+      "Troca de Tela",
+      "Troca de carcaça",
+      "Troca de conectores de energia",
+      "Troca de Cooler",
+      "Reparo de carcaça ",
+      "Reparo de placa mãe ",
+      "Limpeza interna ",
+      "Upgrade de SSD ",
+      "Upgrade de Memória Ram",
+    ],
+    alternativo: true,
+  },
+  pc: {
+    titulo: "PC",
+    icone: "./assets/img/icon-computador.png",
+    listaDeServicos: [
+      "Formatação.",
+      "Backup ",
+      "Formatação com backup",
+      "Limpeza interna",
+      "Montagem de Máquina Nova",
+      "Upgrade de SSD",
+      "Upgrade de Memória Ram",
       "Instalação de Programas",
       "Instalação de Placa de Vídeo",
       "Troca de Placa de Vídeo",
@@ -163,7 +220,7 @@ const servicos = {
   },
   venda: {
     titulo: "Venda de Produtos",
-    icone: "./assets/img/icon-pc.png",
+    icone: "./assets/img/icon-compras.png",
     listaDeServicos: [
       "Water Cooler",
       "Cooler",
@@ -173,11 +230,11 @@ const servicos = {
       "SSD Sata",
       "SSD NVME",
       "SSD M.2 Sata",
-      "Cabos Premium para USB-C/USB (1 Ano de garantia direto com a MenWork)",
-      "Cabos Premium para iPhone (1 Ano de garantia direto com a MenWork)",
-      "Cabos Original para iPhone (1 Ano de garantia direto com a Apple)",
-      "Carregador Premium para iPhone (1 Ano de garantia direto com a MenWork)",
-      "Carregador Original para iPhone (1 Ano de garantia direto com a Apple)",
+      "Cabos Premium para USB-C/USB",
+      "Cabos Premium para iPhone",
+      "Cabos Original para iPhone",
+      "Carregador Premium para iPhone",
+      "Carregador Original para iPhone",
       "Cabo HDMI",
       "Cabo Display port",
       "Placa de rede PCI",
@@ -218,7 +275,7 @@ const servicos = {
   },
   ipad: {
     titulo: "iPad",
-    icone: "../img/icon-ipad.png",
+    icone: "./assets/img/icon-ipad.png",
     listaDeServicos: [
       "Troca de tela",
       "Troca de bateria",
@@ -242,8 +299,8 @@ const servicos = {
     alternativo: false,
   },
   mackbook: {
-    titulo: "MacBook, Mackbook Air, Macbook",
-    icone: "./assets/img/icon-macbook.png",
+    titulo: "MacBook (Air, Pro)",
+    icone: "./assets/img/icone-macbook.png",
     listaDeServicos: [
       "Troca de tela",
       "Troca de teclado",
@@ -276,7 +333,7 @@ const servicos = {
   },
   imac: {
     titulo: "iMac,iMac Pro",
-    icone: "./assets/img/icon-macbook.png",
+    icone: "./assets/img/icon-imac.png",
     listaDeServicos: [
       "Troca de tela",
       "Troca de cooler",
@@ -304,8 +361,8 @@ const servicos = {
     alternativo: false,
   },
   macmini: {
-    titulo: "Mac Mini/ Mac Pro",
-    icone: "./assets/img/icon-macbook.png",
+    titulo: "Mac (Mini, Pro)",
+    icone: "./assets/img/icon-miniApple.png",
     listaDeServicos: [
       "Troca de cooler",
       "Troca de wi-fi",

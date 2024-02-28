@@ -240,6 +240,11 @@ section.servicos {
     align-items: center;
 }
 
+.icon-servico img {
+    width: 70px;
+    height: 70px;
+}
+
 .linha-card {
     margin-top: 20px;
     height: 1px;
@@ -258,6 +263,7 @@ ul.lista-servicos-card {
 
 }
 
+.button-saiba-mais,
 .button-saiba-mais {
     background-color: #E8E7E7ed;
     width: 100%;
@@ -547,7 +553,6 @@ section.membros-equipe {
     justify-content: center;
     align-items: center;
     color: #FFF;
-    font-family: Montserrat;
     font-size: 2.2rem;
     font-weight: 700;
     /* line-height: 2.7rem; */
@@ -750,7 +755,7 @@ footer {
 }
 
 .banner.fundo-pc-gamer h1 {
-    font-size: 10rem;
+    font-size: 9rem;
     font-weight: 900;
     color: #FFF;
 }
@@ -928,9 +933,9 @@ ul.blue-text {
     color: #3C72EC;
 }
 
-.page-title {
+/* .page-title {
     padding-left: 20%;
-}
+} */
 
 .page-title h3 {
     font-size: 10em;
@@ -942,7 +947,7 @@ ul.blue-text {
     font-size: 1.8em;
     color: #ffffff;
     font-weight: 400;
-    padding-right: 10em;
+    padding-right: 5em;
 }
 
 /* fim do modo azul */
@@ -1081,28 +1086,28 @@ ul.blue-text {
 
 .values {
     display: flex;
-    width: 100%;
+    width: 1150px;
     justify-content: end;
 }
 
 .values h3 {
-    font-size: 5rem;
+    font-size: 3.6rem;
     font-weight: 900;
     color: #2A6EE5;
     width: 63.9rem;
-    margin-top: 2.2rem;
+    margin-top: 4rem;
     margin-bottom: 2.2rem;
 }
 
 .values p {
-    font-size: 3rem;
+    font-size: 1.4rem;
     font-weight: 400;
-    width: 63.9rem;
+    width: 51.5rem;
 }
 
 .values .container-textos {
     flex-grow: 2;
-    padding-left: 10%;
+    padding-left: 2rem;
 }
 
 .values .container-imagem-sobre {
@@ -1123,8 +1128,8 @@ ul.blue-text {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 88rem;
-    background-image: url("https://witbiz.com.br/menwork/assets/img/diferencial.png");
+    height: 37rem;
+    background-image: url("../../assets/img/diferencial.png")
 }
 
 .differential p {
@@ -1135,27 +1140,25 @@ ul.blue-text {
 }
 
 .differential h3 {
-    font-size: 6rem;
+    font-size: 3.2rem;
     font-weight: 900;
     color: #fff;
-    margin-bottom: 5.1rem;
+    margin-top: 2rem;
 }
 
 .container-clareza-preco {
     display: flex;
+    justify-content: center;
+    gap: 30px;
     width: 100%;
+    padding: 0 2rem;
 }
 
 .clareza,
 .preco {
-    width: 50%;
     display: flex;
     flex-direction: column;
 
-}
-
-.clareza {
-    padding-left: 10%;
 }
 
 .compromisso {
@@ -1167,43 +1170,35 @@ ul.blue-text {
 .clareza p,
 .preco p,
 .compromisso p {
-    font-size: 3rem;
+    font-size: 1.4rem;
     font-weight: 400;
     margin-top: 0;
-}
-
-.compromisso p {
-    text-align: center;
-    width: 113rem;
+    width: 30rem;
 }
 
 .clareza h3 {
-    width: 54.2rem;
-    font-size: 5rem;
+    font-size: 3.6rem;
     font-weight: 900;
     margin-bottom: 2.2rem;
+    width: 330px;
 }
 
 .preco h3 {
-    width: 54.2rem;
-    font-size: 5rem;
+    width: 333px;
+    font-size: 3.6rem;
     font-weight: 900;
     margin-bottom: 1.8rem;
 }
 
 .compromisso h3 {
     width: 100%;
-    font-size: 5rem;
+    font-size: 3.6rem;
     font-weight: 900;
-    margin-top: 2.8rem;
     margin-bottom: 1.8rem;
     text-align: center;
+    width: 240px;
 }
 
-.clareza p,
-.preco p {
-    width: 60rem;
-}
 
 .modal-servicos {
     position: fixed;
@@ -1220,7 +1215,7 @@ ul.blue-text {
 }
 
 .container-modal-sevicos {
-    width: 80%;
+    width: 58%;
     min-height: 550px;
     background: #fff;
     box-sizing: border-box;
@@ -1234,7 +1229,7 @@ ul.blue-text {
     width: 100%;
     display: flex;
     align-items: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     position: relative;
 }
 
@@ -1285,6 +1280,7 @@ ul.blue-text {
     justify-content: center;
     align-items: center;
     flex-grow: 2;
+    padding: 1.5rem 8rem;
 }
 
 .modal-content-servicos.alternativo {
@@ -1305,12 +1301,55 @@ ul.blue-text {
     color: #fff;
 }
 
+.lista-de-servicos-modal.branco li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+
+}
+
+.lista-de-servicos-modal.branco li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #746E74;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.lista-de-servicos-modal li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+}
+
+.lista-de-servicos-modal li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #D9D9D9;
+    border-radius: 50%;
+    display: inline-block;
+}
+
 .branco {
     color: #fff;
 }
 
+.fundo-branco {
+    background-color: #FFF;
+}
+
 .modal-footer-servicos {
-    flex-grow: 1;
+    height: 7rem;
     background-color: #2A6EE5;
     display: flex;
 }
@@ -2008,7 +2047,8 @@ ul.blue-text {
 
     .values {
         flex-direction: column-reverse;
-
+        width: 100%;
+        padding: 2em 0 2em
     }
 
     .values .container-imagem-sobre {
@@ -2089,10 +2129,30 @@ ul.blue-text {
         width: 100%;
         gap: 5px;
     }
+
+    div.slider-container {
+        width: 80vw;
+    }
+
+    button.proximo {
+        right: -10%;
+    }
+
+    button.anterior {
+        left: -10%;
+    }
+}
+
+.container-pc-gamer {
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 9rem;
 }
 
 .slider-container {
-    width: 75vw;
+    width: 1034px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -2126,14 +2186,23 @@ ul.blue-text {
     background-color: #0008;
 }
 
+.anterior,
+.proximo {
+    background-color: transparent;
+    border: none;
+}
+
 .anterior {
     position: absolute;
     left: 0;
+    left: -5%;
+    top: 50%;
 }
 
 .proximo {
     position: absolute;
-    right: 0;
+    right: -5%;
+    top: 50%;
 }
 
 .slider-item-container {
