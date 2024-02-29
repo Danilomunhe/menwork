@@ -1476,6 +1476,11 @@ ul.blue-text {
         padding: 0;
     }
 
+    .button-home {
+        width: 20rem;
+        height: 4rem;
+    }
+
     .card-servico {
         width: 31.8rem;
     }
@@ -2064,6 +2069,10 @@ ul.blue-text {
         font-size: 1.2rem;
         margin-top: .7rem;
 
+    }
+
+    section.servicos {
+        margin-top: 3rem;
     }
 
     .esconder {
