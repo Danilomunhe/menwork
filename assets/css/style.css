@@ -1067,7 +1067,7 @@ ul.blue-text {
     align-items: center;
     justify-content: center;
     border: 2px solid rgba(81, 126, 234, 0.2);
-    min-height: 24rem;
+    height: 24rem;
     width: 55rem;
 }
 
@@ -2057,7 +2057,7 @@ ul.blue-text {
     .maintence {
         min-height: 8.6rem;
         padding: 1.2rem 1.2rem;
-        min-height: 8rem;
+        height: 8rem;
         width: 31rem;
     }
 
