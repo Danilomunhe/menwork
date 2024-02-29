@@ -268,7 +268,6 @@ ul.lista-servicos-card {
 
 }
 
-.button-saiba-mais,
 .button-saiba-mais {
     background-color: #E8E7E7ed;
     width: 100%;
@@ -1463,6 +1462,18 @@ ul.blue-text {
         border: none;
         padding: 10px 15px;
         cursor: pointer;
+    }
+
+    .header-card {
+        padding: 0;
+    }
+
+    .card-servico {
+        width: 31.8rem;
+    }
+
+    div.slider-item-container {
+        gap: 2.8rem
     }
 
     .burger-menu {
