@@ -403,7 +403,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
   burgerMenu.addEventListener("click", toggleMenu);
-  window.addEventListener("resize", toggleMenu);
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
+      toggleMenu();
+    }
+  });
   closeButton.addEventListener("click", function () {
     itemsMenu.style.display = "none";
   });

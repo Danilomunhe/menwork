@@ -1398,8 +1398,8 @@ ul.blue-text {
 
 
     header .menu img {
-        width: 4.8rem;
-        height: 0.64rem;
+        width: 11.8rem;
+        height: 1.64rem;
         align-self: center;
     }
 
@@ -1409,7 +1409,14 @@ ul.blue-text {
     }
 
     .button-contato {
-        display: none;
+        width: 9rem;
+        height: 2rem;
+        position: absolute;
+        right: 10px;
+    }
+
+    .button-contato a {
+        font-size: 0.7rem;
     }
 
 
@@ -1437,6 +1444,7 @@ ul.blue-text {
     ul.itens-menu li {
         text-align: center;
         padding: 15px;
+        font-size: 1.4rem;
     }
 
     .close-button-menu {
@@ -1444,6 +1452,7 @@ ul.blue-text {
         top: 0;
         right: 0;
         z-index: 2000;
+        font-size: 1.6rem;
     }
 
     .burger-menu,
@@ -1458,7 +1467,7 @@ ul.blue-text {
 
     .burger-menu {
         position: absolute;
-        right: 0;
+        left: 20px;
     }
 
     .burger-menu:hover,
