@@ -1535,7 +1535,7 @@ ul.blue-text {
         left: 20px;
         background-color: transparent;
         color: #3C72EC;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .burger-menu:hover,
@@ -1569,6 +1569,15 @@ ul.blue-text {
     .textos-banner-mobile .principal {
         width: 28.1rem;
         height: 3.5rem;
+    }
+
+    .container-pc-gamer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 9rem;
+        margin-top: 0.6rem;
+        padding-bottom: 0 !important;
     }
 
     .banner h3,
@@ -2306,8 +2315,7 @@ ul.blue-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 9rem;
-    margin-top: 0.6rem;
+    padding-bottom: 9rem;
 }
 
 .slider-container {
