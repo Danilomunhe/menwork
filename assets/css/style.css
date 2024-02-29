@@ -1084,9 +1084,7 @@ ul.blue-text {
 }
 
 /* Fim Service */
-.esconder-desk {
-    display: none;
-}
+
 
 .texto-produto-mobile,
 .texto-mobile-servico {
@@ -1171,7 +1169,9 @@ ul.blue-text {
     align-items: center;
     width: 100%;
     height: 37rem;
-    background-image: url("../../assets/img/diferencial.png")
+    background-image: url("../../assets/img/diferencial.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .differential p {
@@ -1535,7 +1535,7 @@ ul.blue-text {
         left: 20px;
         background-color: transparent;
         color: #3C72EC;
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
     .burger-menu:hover,
@@ -2394,4 +2394,8 @@ ul.blue-text {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.esconder-desk {
+    display: none;
 }
