@@ -1454,6 +1454,12 @@ ul.blue-text {
         font-size: 1.4rem;
     }
 
+    .fundo-pc-gamer ul.itens-menu {
+        background-color: #313131;
+    }
+
+
+
     .close-button-menu {
         position: absolute;
         top: 0;
@@ -1471,6 +1477,8 @@ ul.blue-text {
         padding: 10px 15px;
         cursor: pointer;
     }
+
+
 
     .header-card {
         padding: 0;
@@ -1497,6 +1505,15 @@ ul.blue-text {
     .burger-menu:hover,
     .close-button:hover {
         background-color: #2a57a0;
+    }
+
+    .bg-blue .menu .burger-menu {
+        background-color: #fff;
+        color: rgb(81, 126, 234);
+    }
+
+    .bg-blue .menu ul.itens-menu li a {
+        color: #000 !important;
     }
 
     .banner video {
@@ -2123,9 +2140,9 @@ ul.blue-text {
         min-height: 1rem !important;
     }
 
-    .bg-blue.sobre {
+    /* .bg-blue.sobre {
         height: 3rem;
-    }
+    } */
 
     .banner-sobre {
         background-image: url("https://witbiz.com.br/menwork/assets/img/banner-sobre-mobile.png");
