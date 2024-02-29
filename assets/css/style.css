@@ -124,6 +124,11 @@ ul.itens-menu li a {
 
 }
 
+.burger-menu,
+.close-button-menu {
+    display: none;
+}
+
 .button-home a {
     background-color: white;
     border-radius: 2.5rem;
@@ -1390,15 +1395,12 @@ ul.blue-text {
         overflow-x: hidden;
     }
 
-    header .menu {
-        width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+
 
     header .menu img {
         width: 4.8rem;
         height: 0.64rem;
+        align-self: center;
     }
 
     ul.itens-menu {
@@ -1407,12 +1409,61 @@ ul.blue-text {
     }
 
     .button-contato {
-        width: 5.1rem;
-        height: 2rem;
+        display: none;
     }
 
-    .button-contato a {
-        font-size: 0.5rem;
+
+    header .menu {
+        width: 100%;
+        align-items: center;
+        position: relative;
+        justify-content: center;
+    }
+
+    ul.itens-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 999;
+        transition: display 0.3s ease;
+    }
+
+    ul.itens-menu li {
+        text-align: center;
+        padding: 15px;
+    }
+
+    .close-button-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2000;
+    }
+
+    .burger-menu,
+    .close-button-menu {
+        display: block;
+        background-color: #3C72EC;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+
+    .burger-menu {
+        position: absolute;
+        right: 0;
+    }
+
+    .burger-menu:hover,
+    .close-button:hover {
+        background-color: #2a57a0;
     }
 
     .banner video {
@@ -1504,6 +1555,14 @@ ul.blue-text {
     } */
     .servicos-windows {
         justify-content: center;
+    }
+
+    .textos-servicos h3 {
+        font-size: .8rem;
+    }
+
+    .textos-servicos h2 {
+        font-size: 1rem;
     }
 
     section.sevicos-autorizada {
