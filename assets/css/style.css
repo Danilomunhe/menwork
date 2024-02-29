@@ -268,7 +268,11 @@ ul.lista-servicos-card {
 
 }
 
-.button-saiba-mais {
+.button-saiba-mais,
+.button-saiba-mais-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #E8E7E7ed;
     width: 100%;
     height: 70px;
@@ -276,7 +280,10 @@ ul.lista-servicos-card {
     font-size: 16px;
     font-weight: 800;
     color: #000000;
+}
 
+a.button-saiba-mais-mobile:hover {
+    color: #000000;
 }
 
 .alternativo {
@@ -295,7 +302,8 @@ ul.lista-servicos-card {
     color: #fff;
 }
 
-.card-servico.alternativo .button-saiba-mais {
+.card-servico.alternativo .button-saiba-mais,
+.card-servico.alternativo .button-saiba-mais-mobile {
     background-color: #4A484A;
     color: #fff;
 }
@@ -2208,6 +2216,10 @@ ul.blue-text {
 
     .esconder-desk {
         display: block;
+    }
+
+    a.esconder-desk {
+        display: flex;
     }
 
     .container-footer {
