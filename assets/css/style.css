@@ -1067,7 +1067,8 @@ ul.blue-text {
     align-items: center;
     justify-content: center;
     border: 2px solid rgba(81, 126, 234, 0.2);
-    min-height: 20rem;
+    min-height: 24rem;
+    width: 55rem;
 }
 
 .piece-sell h3,
@@ -1429,6 +1430,10 @@ ul.blue-text {
 .button-modal-footer.alternativo {
     background-color: #4A484A;
     color: #fff;
+}
+
+.esconder-desk {
+    display: none;
 }
 
 /* Fim Sobre */
@@ -2052,6 +2057,8 @@ ul.blue-text {
     .maintence {
         min-height: 8.6rem;
         padding: 1.2rem 1.2rem;
+        min-height: 8rem;
+        width: 31rem;
     }
 
     .textos-produto h3 {
@@ -2405,8 +2412,4 @@ ul.blue-text {
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
-
-.esconder-desk {
-    display: none;
 }
