@@ -858,6 +858,12 @@ ul.itens-menu li a.color-white {
     object-fit: cover;
 }
 
+.container-produto img {
+    width: 55.3rem;
+    height: 36.9rem;
+    object-fit: cover;
+}
+
 .carousel-produto-servico {
     margin-top: 7.2rem;
     margin-bottom: 7.2rem;
@@ -1993,6 +1999,12 @@ ul.blue-text {
     }
 
     .container-produto video {
+        width: 13.9rem;
+        height: 14.8rem;
+        object-fit: cover;
+    }
+
+    .container-produto img {
         width: 13.9rem;
         height: 14.8rem;
         object-fit: cover;
