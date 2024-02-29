@@ -434,6 +434,37 @@ textarea {
     padding: 0.5rem 1.1rem;
 }
 
+.button-form {
+    width: 15rem;
+    height: 4rem;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 2.5rem;
+    background-color: #3C72EC;
+    color: #fff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    transition: all linear 0.5s;
+}
+
+.button-form:hover {
+    background-color: #fff;
+    color: #3C72EC;
+    border: 1px solid #3C72EC;
+
+}
+
+.button-form.alternativo {
+    background-color: #333033;
+}
+
+.button-form.alternativo:hover {
+    background-color: #fff;
+    color: #333033;
+    border: 1px solid #333033;
+}
+
 .right-contato {
     width: 50%;
     display: flex;
@@ -692,7 +723,7 @@ footer {
     width: 1150px;
     display: flex;
     align-items: center;
-    gap: 190px;
+    gap: 150px;
 }
 
 .container-logo {
@@ -726,16 +757,16 @@ footer {
 .itens-footer ul li a {
     font-weight: 400;
     font-size: 1rem;
-    /* line-height: 1.3rem; */
     color: #fff
 }
 
 .itens-footer a {
     font-weight: 400;
     font-size: 1.4rem;
-    /* line-height: 1.7rem; */
     color: #fff;
     margin-bottom: 0.6rem;
+    display: flex;
+    gap: 0.5rem;
 }
 
 .itens-footer a i {
@@ -1478,6 +1509,11 @@ ul.blue-text {
         cursor: pointer;
     }
 
+    .button-form {
+        width: 12rem;
+        height: 3rem;
+        font-size: 1.6rem;
+    }
 
 
     .header-card {
@@ -2074,10 +2110,9 @@ ul.blue-text {
 
     .container-logo {
         width: 12.4rem;
-        height: 1.5rem;
+        min-height: 8rem;
         margin-left: 2rem;
         margin-right: 6.6rem;
-        margin-top: 1rem;
         gap: 0;
     }
 
@@ -2246,11 +2281,12 @@ ul.blue-text {
 
     a.esconder-desk {
         display: flex;
+        gap: 0.5rem;
     }
 
     .container-footer {
         width: 100%;
-        gap: 5px;
+        gap: 6rem;
     }
 
     div.slider-container {
