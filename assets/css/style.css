@@ -736,12 +736,11 @@ footer {
 .container-logo h3 {
     font-weight: 800;
     font-size: 1.8rem;
-    /* line-height: 2.1rem; */
     color: #fff
 }
 
 .itens-footer {
-    min-height: 8rem;
+    min-height: 11rem;
     display: flex;
     flex-direction: column;
 }
@@ -1489,8 +1488,6 @@ ul.blue-text {
         background-color: #313131;
     }
 
-
-
     .close-button-menu {
         position: absolute;
         top: 0;
@@ -1536,6 +1533,9 @@ ul.blue-text {
     .burger-menu {
         position: absolute;
         left: 20px;
+        background-color: transparent;
+        color: #3C72EC;
+        font-size: 2rem;
     }
 
     .burger-menu:hover,
@@ -1544,8 +1544,7 @@ ul.blue-text {
     }
 
     .bg-blue .menu .burger-menu {
-        background-color: #fff;
-        color: rgb(81, 126, 234);
+        color: #fff;
     }
 
     .bg-blue .menu ul.itens-menu li a {
@@ -2307,7 +2306,8 @@ ul.blue-text {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 9rem;
+    height: 9rem;
+    margin-top: 0.6rem;
 }
 
 .slider-container {
