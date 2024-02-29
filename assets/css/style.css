@@ -1734,6 +1734,10 @@ ul.blue-text {
         margin-top: 1rem;
     }
 
+    .right-contato img {
+        width: 100%;
+    }
+
     .container-info-contato h2 {
         font-size: 1.8rem;
         margin-bottom: 0.6rem;
@@ -1771,11 +1775,13 @@ ul.blue-text {
     .carousel-membros .carousel.slide .carousel-control-prev {
         left: -4rem !important;
         top: -7rem;
+        display: none;
     }
 
     .carousel-membros .carousel.slide .carousel-control-next {
         right: -3rem !important;
         top: -7rem;
+        display: none;
     }
 
     .container-empresas p {
@@ -1821,7 +1827,7 @@ ul.blue-text {
     }
 
     .conteudo-info-contato span {
-        font-size: 1.2rem;
+        font-size: 1rem;
         text-align: center;
         width: 32rem;
         margin-bottom: 1.2rem;
