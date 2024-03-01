@@ -361,6 +361,7 @@ section.container-empresas {
     font-weight: 600;
     font-size: 1.3rem;
     width: 23rem;
+    margin-top: 1rem;
 }
 
 /*fim da seciton empresas*/
@@ -1243,7 +1244,7 @@ ul.blue-text {
     font-size: 3.6rem;
     font-weight: 900;
     margin-bottom: 1.8rem;
-    text-align: center;
+    text-align: left;
     width: 240px;
 }
 
