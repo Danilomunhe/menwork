@@ -1479,7 +1479,6 @@ ul.blue-text {
         display: none;
         flex-direction: column;
         width: 100%;
-        height: 100vh;
         position: absolute;
         top: 0;
         left: 0;
@@ -1493,6 +1492,7 @@ ul.blue-text {
         text-align: center;
         padding: 15px;
         font-size: 1.4rem;
+        border-bottom: 1px solid #E7EEFF;
     }
 
     .fundo-pc-gamer ul.itens-menu {
