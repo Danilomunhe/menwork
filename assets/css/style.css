@@ -2110,14 +2110,13 @@ ul.blue-text {
         display: block;
     }
 
-    /* .carousel-produto-servico .carousel.slide .carousel-control-prev {
-        left: -3rem !important;
+    .carousel-produto-servico .carousel.slide .carousel-control-prev {
+        display: none;
     }
 
     .carousel-produto-servico .carousel.slide .carousel-control-next {
-        right: -3rem !important;
-        top: -1rem !important;
-    } */
+        display: none;
+    }
 
     .left {
         padding-left: 5%;
