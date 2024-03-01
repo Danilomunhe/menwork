@@ -1112,7 +1112,6 @@ ul.blue-text {
 
 .banner-sobre h3 {
     font-size: 10.2em;
-    text-transform: uppercase;
     font-weight: bold;
     color: #ffffff;
 }
@@ -1767,6 +1766,10 @@ ul.blue-text {
 
     }
 
+    .compromisso {
+        padding-left: 8%;
+    }
+
     .container-empresas h3 {
         font-size: 0.8rem;
     }
@@ -2016,6 +2019,11 @@ ul.blue-text {
         object-fit: cover;
     }
 
+    .col-first,
+    .col-second {
+        min-height: 5rem;
+    }
+
     .col-first.mobile-empresas .maintence img,
     .col-first.mobile-empresas .product-sell img,
     .col-second.mobile-empresas .computer-sell img,
@@ -2058,7 +2066,7 @@ ul.blue-text {
     .maintence {
         min-height: 8.6rem;
         padding: 1.2rem 1.2rem;
-        height: 8rem;
+        height: 13rem;
         width: 31rem;
     }
 
@@ -2102,14 +2110,14 @@ ul.blue-text {
         display: block;
     }
 
-    .carousel-produto-servico .carousel.slide .carousel-control-prev {
+    /* .carousel-produto-servico .carousel.slide .carousel-control-prev {
         left: -3rem !important;
     }
 
     .carousel-produto-servico .carousel.slide .carousel-control-next {
         right: -3rem !important;
         top: -1rem !important;
-    }
+    } */
 
     .left {
         padding-left: 5%;
