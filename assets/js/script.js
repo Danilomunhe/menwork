@@ -84,7 +84,11 @@ document
       closeModal(); // Fecha o modal
     }
   });
+buttonModal.addEventListener("click", function () {
+  document.getElementById("contato").scrollIntoView({ behavior: "smooth" });
 
+  closeModal();
+});
 const proximoItem = (slide) => {
   if (slide === 0) {
     const primeiroItem = sliderItems[0];
