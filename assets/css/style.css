@@ -1892,6 +1892,7 @@ ul.blue-text {
 
     .container-imagens-membros {
         gap: 1.2rem;
+        justify-content: center;
     }
 
     .carousel-membros .carousel.slide .carousel-control-prev {
