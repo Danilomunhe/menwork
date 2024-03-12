@@ -574,6 +574,12 @@ section.membros-equipe {
 
 }
 
+.icone-servico-card img {
+    width: 85px;
+    max-height: 100px;
+    object-fit: cover;
+}
+
 .conteudo-info-contato span {
     font-size: 1.8rem;
     font-weight: 300;
@@ -2107,6 +2113,12 @@ ul.blue-text {
     .container-servico-card {
         gap: 0.6rem;
         margin-bottom: 2.26rem;
+        min-height: 9rem;
+    }
+
+    .left-column-servicos,
+    .right-column-servicos {
+        min-height: 400px;
     }
 
     .right-column-servicos {
