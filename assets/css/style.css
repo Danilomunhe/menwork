@@ -62,6 +62,11 @@ header .menu {
     justify-content: space-between;
 }
 
+.menu a img {
+    width: 167px;
+    height: 21px;
+}
+
 ul.itens-menu {
     display: flex;
     font-size: 1.4rem;
@@ -208,7 +213,7 @@ section.servicos {
 
 .card-servico {
     width: 330px;
-    min-height: 394px;
+    min-height: 475px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -259,6 +264,7 @@ section.servicos {
 
 ul.lista-servicos-card {
     margin: 21px 0 !important;
+    min-height: 24rem;
 }
 
 .lista-servicos-card li {
@@ -333,11 +339,12 @@ section.container-empresas {
 }
 
 .container-empresas p {
-    font-size: 2rem;
-    font-weight: 400;
+    font-size: 1.6rem;
+    font-weight: 300;
     /* line-height: 2.4rem; */
     color: #fff;
     text-align: center;
+    width: 1118px;
 }
 
 .container-imagens-empresas {
@@ -345,7 +352,7 @@ section.container-empresas {
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 1.3rem;
+    gap: 6.2rem;
     padding: 1.8rem 0;
 }
 
@@ -1082,8 +1089,9 @@ ul.blue-text {
 .computer-sell h3,
 .product-sell h3,
 .maintence h3 {
-    font-size: 1.8em;
-    padding-left: 1em;
+    font-size: 1.6rem;
+    font-weight: 800;
+    padding-left: 1rem;
 
 }
 
@@ -1092,7 +1100,7 @@ ul.blue-text {
 .product-sell p,
 .maintence p {
     padding-right: 2em;
-    padding-left: 1.8em;
+    padding-left: 0.8em;
 
 }
 
@@ -1131,7 +1139,7 @@ ul.blue-text {
 }
 
 .paragrph-first {
-    font-size: 3rem;
+    font-size: 1.4rem;
     text-align: left;
     padding: 2.0em 0 2.0em 0;
 }
@@ -1800,11 +1808,12 @@ ul.blue-text {
     }
 
     .container-empresas h3 {
-        font-size: 0.8rem;
+        font-size: 1.4rem;
+        margin-top: 0;
     }
 
     .container-empresas h2 {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 
 
@@ -1918,6 +1927,7 @@ ul.blue-text {
         font-size: 1.2rem;
         text-align: center;
         line-height: 1.4rem;
+        margin-bottom: 2.1rem;
     }
 
     .container-imagens-membros img {
@@ -2112,13 +2122,13 @@ ul.blue-text {
 
     .container-servico-card {
         gap: 0.6rem;
-        margin-bottom: 2.26rem;
-        min-height: 9rem;
+        margin-bottom: 2rem;
+        min-height: auto;
     }
 
     .left-column-servicos,
     .right-column-servicos {
-        min-height: 400px;
+        min-height: auto;
     }
 
     .right-column-servicos {
