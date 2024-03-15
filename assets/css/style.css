@@ -2147,6 +2147,7 @@ ul.blue-text {
     .icone-servico-card img {
         width: 2.8rem;
         height: 2.8rem;
+        object-fit: contain;
     }
 
     .textos-card-servico h3 {
@@ -2155,7 +2156,7 @@ ul.blue-text {
     }
 
     .textos-card-servico p.texto-mobile-servico {
-        font-size: 1.2rem;
+        font-size: 1rem;
         width: 10rem;
         display: block;
     }
@@ -2321,7 +2322,7 @@ ul.blue-text {
 
     .differential {
         background-image: url("https://witbiz.com.br/menwork/assets/img/diferencial-mobile.png");
-
+        min-height: 400px;
     }
 
     .differential p {
