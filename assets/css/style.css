@@ -479,6 +479,8 @@ textarea {
     justify-content: end;
 }
 
+
+
 /*fim da seciton contato*/
 
 /*Inicio Section equipe*/
@@ -648,9 +650,8 @@ section.membros-equipe {
 }
 
 .caixa-mensagem p {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
-    /* line-height: 3.7rem; */
     text-align: center;
     width: 78.1rem;
 
@@ -889,11 +890,11 @@ ul.itens-menu li a.color-white {
 }
 
 .carousel-produto-servico .carousel.slide .carousel-control-prev {
-    left: -15rem !important;
+    left: -5rem !important;
 }
 
 .carousel-produto-servico .carousel.slide .carousel-control-next {
-    right: -15rem !important;
+    right: -5rem !important;
 }
 
 .carousel-produto-servico .carousel.slide .carousel-control-prev-icon {
@@ -1139,16 +1140,17 @@ ul.blue-text {
 }
 
 .paragrph-first {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-align: left;
-    padding: 2.0em 0 2.0em 0;
 }
 
 .values {
     display: flex;
     width: 1150px;
     justify-content: end;
+    margin-top: 58px;
 }
+
 
 .values h3 {
     font-size: 3.6rem;
@@ -1179,6 +1181,8 @@ ul.blue-text {
 
 .values .container-imagem-sobre img {
     width: 100%;
+    max-height: 64rem;
+    object-fit: cover;
 }
 
 .differential {
@@ -2271,8 +2275,12 @@ ul.blue-text {
         font-size: 4rem;
     }
 
+    .values .container-textos {
+        padding-right: 2rem;
+    }
+
     .paragrph-first {
-        width: 32.5rem;
+        width: 100%;
         font-size: 1.4rem;
     }
 
@@ -2292,10 +2300,10 @@ ul.blue-text {
         padding: 0 10%;
     }
 
-    .container-imagem-sobre img {
+    .values .container-imagem-sobre img {
         width: 33.4rem;
-        height: 23.6rem;
-        object-fit: cover;
+        max-height: 23.6rem;
+        margin-bottom: 2rem;
     }
 
     .values h3 {

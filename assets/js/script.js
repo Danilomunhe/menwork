@@ -253,7 +253,7 @@ const servicos = {
     alternativo: true,
   },
   iphone: {
-    titulo: "Iphone",
+    titulo: "iPhone",
     icone: "./assets/img/icon-iphone.png",
     listaDeServicos: [
       "Troca de tela",
