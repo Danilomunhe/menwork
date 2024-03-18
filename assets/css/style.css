@@ -818,9 +818,11 @@ footer {
 }
 
 .banner.fundo-pc-gamer p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 400;
     color: #fff;
+    width: 465px;
+    padding-right: 74px;
 }
 
 .left {
@@ -1631,6 +1633,11 @@ ul.blue-text {
         padding-bottom: 0 !important;
     }
 
+    .banner.fundo-pc-gamer p {
+        width: auto;
+        padding: 0;
+    }
+
     .banner h3,
     .banner p {
         font-size: 1.2rem;
@@ -2403,6 +2410,8 @@ ul.blue-text {
     align-items: center;
     padding-bottom: 9rem;
 }
+
+
 
 .slider-container {
     width: 1034px;
