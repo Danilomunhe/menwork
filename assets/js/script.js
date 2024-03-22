@@ -89,7 +89,7 @@ buttonModal.addEventListener("click", function () {
 
   closeModal();
 });
-const proximoItem = (slide) => {
+function proximoItem(slide) {
   if (slide === 0) {
     const primeiroItem = sliderItems[0];
     sliderItemContainer.appendChild(primeiroItem);
@@ -99,8 +99,14 @@ const proximoItem = (slide) => {
     sliderItemContainerAlternativo.appendChild(primeiroItemAlternativo);
     sliderItemsAlternativo = document.querySelectorAll(".item-alternativo");
   }
-};
+}
 
+setInterval(function () {
+  proximoItem(0); // Passando 0 como slide
+}, 5000); // 5000 milissegundos = 5 segundos
+setInterval(function () {
+  proximoItem(1); // Passando 0 como slide
+}, 5000); // 5000 milissegundos = 5 segundos
 const itemAnterior = (slide) => {
   if (slide === 0) {
     const ultimoItem = sliderItems[sliderItems.length - 1];
@@ -120,6 +126,7 @@ const servicos = {
     titulo: "Notebook Gamer",
     icone: "./assets/img/icon-controle.png",
     listaDeServicos: [
+      "Backup",
       "Formatação",
       "Formatação com backup",
       "Instalação de programas",
@@ -173,6 +180,7 @@ const servicos = {
     titulo: "Notebook",
     icone: "./assets/img/icon-notebook.png",
     listaDeServicos: [
+      "Backup",
       "Formatação",
       "Formatação com backup",
       "Instalação de programas",
