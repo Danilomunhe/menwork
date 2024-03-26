@@ -407,6 +407,7 @@ section.container-empresas {
     /* line-height: 2.2rem; */
     text-align: left;
     margin-bottom: 1.7rem;
+    width: 531px;
 }
 
 .container-form form {
@@ -1894,6 +1895,7 @@ ul.blue-text {
     .container-info-contato p {
         font-size: 1.2rem;
         margin-bottom: 0.6rem;
+        width: 331px;
     }
 
     .membros-equipe h2 {
