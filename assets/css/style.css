@@ -973,7 +973,7 @@ ul.itens-menu li a.color-white {
 /* Início modo azul */
 
 .bg-blue {
-    background-color: #2876F2;
+    background-color: #0073F7;
 }
 
 .blue-text li a {
@@ -1045,7 +1045,7 @@ ul.blue-text {
     width: 100%;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #2876F2, #2876F2 85%, #fff 15%);
+    background: linear-gradient(to bottom, #0073F7, #0073F7 85%, #fff 15%);
     padding-top: 12em;
 }
 
