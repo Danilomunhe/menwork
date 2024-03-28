@@ -808,7 +808,7 @@ footer {
 }
 
 .fundo-pc-gamer {
-    background-color: rgb(58, 53, 57);
+    background-color: #35272F;
     width: 100%;
 }
 
@@ -974,6 +974,14 @@ ul.itens-menu li a.color-white {
 
 .bg-blue {
     background-color: #0073F7;
+}
+
+.container-banner .right img {
+    width: 100%;
+}
+
+.banner .right img {
+    width: 100%;
 }
 
 .blue-text li a {
@@ -2056,7 +2064,8 @@ ul.blue-text {
         padding: 0;
     }
 
-    .container-banner video {
+    .container-banner .right img,
+    .banner .right img {
         display: none;
     }
 
@@ -2087,7 +2096,7 @@ ul.blue-text {
 
     .services {
         padding: 0;
-        background: linear-gradient(to top, #fff 70%, rgb(81, 126, 234) 30%);
+        background: linear-gradient(to top, #fff 70%, #0073F7 30%);
     }
 
     .services .carousel-produto-servico.esconder-desk {
